@@ -6,9 +6,15 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class BaseViewController: UIViewController, Storyboarded {
 
+    lazy var disposeBag:  DisposeBag = {
+        return DisposeBag()
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         styleNavigationBar()

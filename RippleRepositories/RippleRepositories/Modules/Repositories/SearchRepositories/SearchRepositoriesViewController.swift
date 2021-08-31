@@ -5,31 +5,29 @@
 //  Created by Muhammad Ewaily on 31/08/2021.
 //
 
-import UIKit
+import RxCocoa
+import RxSwift
 import Toast_Swift
+import UIKit
 
 class SearchRepositoriesViewController: BaseViewController {
-
-    @IBOutlet weak private var searchTextField  : SearchTextField!
-    @IBOutlet weak var searchButton: UIButton!
-    
-    @IBAction func searchButtonPressed(_ sender: UIButton) {
-        self.view.hideAllToasts()
-        if viewModel.validateQuery() {
-            openRepositoriesList()
-        }
-        else {
-            self.view.makeToast(Strings.INVALID_SEARCH_QUERY)
-        }
-    }
+    @IBOutlet private var searchTextField: SearchTextField!
+    @IBOutlet var searchButton: UIButton!
     
     private var viewModel: SearchRepositoriesViewModel!
+
+    @IBAction func searchButtonPressed(_ sender: UIButton) {
+        self.view.hideAllToasts()
+        viewModel.didPressSearchBtn()
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         viewModel = SearchRepositoriesViewModel()
         setupUI()
+        handleBinding()
     }
     
     private func setupUI() {
@@ -55,12 +53,28 @@ class SearchRepositoriesViewController: BaseViewController {
         let navigationManger = NavigationManager(navigationController: navigationController)
         navigationManger.pushRepositoriesList(query: query)
     }
+    
+    private func handleBinding() {
+        viewModel.isConnectionReachable.subscribe { [weak self] value in
+            guard let self = self, let value = value.element else { return }
+            if value {
+                if self.viewModel.validateQuery() {
+                    self.openRepositoriesList()
+                }
+                else {
+                    self.view.makeToast(Strings.INVALID_SEARCH_QUERY)
+                }
+            }
+            else {
+                self.view.makeToast(Strings.NO_INTERNET_CONNECTION)
+            }
+        }.disposed(by: disposeBag)
+    }
 }
 
 // MARK: - UITextFieldDelegate
 
 extension SearchRepositoriesViewController: UITextFieldDelegate {
-    
     func textFieldShouldClear(_ textField: UITextField) -> Bool {
         viewModel.setSearchedQuery(query: "")
         return true
@@ -73,7 +87,7 @@ extension SearchRepositoriesViewController: UITextFieldDelegate {
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
-        guard let text = textField.text else {return}
+        guard let text = textField.text else { return }
         viewModel.setSearchedQuery(query: text)
     }
 }

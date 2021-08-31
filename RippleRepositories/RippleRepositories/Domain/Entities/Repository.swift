@@ -9,6 +9,6 @@ import Foundation
 
 struct Repository {
     let repoName            : String
-    let repoDescription    : String
+    let repoDescription     : String
     let ownerAvatarURL      : URL?
 }

@@ -16,6 +16,7 @@ struct Strings {
     static let FIND_A_REPOSITORY = "Find a repository..."
     static let REPOSITORIES_LIST = "Repositories List"
     static let INVALID_SEARCH_QUERY = "Invalid search query"
+    static let NO_INTERNET_CONNECTION = "No internet connection"
 }
 
 struct Fonts {

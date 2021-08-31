@@ -6,6 +6,8 @@
 //
 
 import Foundation
+import RxCocoa
+import RxSwift
 
 protocol ListRepositoriesViewModelOutput {
     func getRepositoryInfo(at index: Int) -> Repository
@@ -20,21 +22,21 @@ class ListRepositoriesViewModel: ListRepositoriesViewModelOutput, ListRepositori
     
     let query: String
     private let useCase = ListRepositoriesUseCase()
-    private var repositories: [Repository] = []
+    var repositories: BehaviorRelay<[Repository]> = .init(value: [])
     
     init(query: String) {
         self.query = query
     }
     
     func getRepositoryInfo(at index: Int) -> Repository {
-        let repository = repositories[index]
+        let repository = repositories.value[index]
         return Repository(repoName: repository.repoName,
-                                  repoDescription: repository.repoDescription,
-                                  ownerAvatarURL: repository.ownerAvatarURL)
+                          repoDescription: repository.repoDescription,
+                          ownerAvatarURL: repository.ownerAvatarURL)
     }
     
     func countRepositories() -> Int {
-        return repositories.count
+        return repositories.value.count
     }
     
     func fetchRepositories(completion: @escaping () -> Void) {
@@ -42,7 +44,7 @@ class ListRepositoriesViewModel: ListRepositoriesViewModelOutput, ListRepositori
             guard let self = self else { return }
             switch result {
             case .success(let repositories):
-                self.repositories = repositories
+                self.repositories.accept(repositories)
                 print(repositories)
                 completion()
             case .failure(let error):
