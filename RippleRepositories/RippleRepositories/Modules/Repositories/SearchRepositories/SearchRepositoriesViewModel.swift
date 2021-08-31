@@ -7,7 +7,16 @@
 
 import Foundation
 
-class SearchRepositoriesViewModel {
+protocol SearchRepositoriesViewModelOutput {
+    func getSearchedQuery() -> String
+    func validateQuery() -> Bool
+}
+
+protocol SearchRepositoriesViewModelInput {
+    func setSearchedQuery(query: String)
+}
+
+class SearchRepositoriesViewModel:SearchRepositoriesViewModelOutput, SearchRepositoriesViewModelInput {
     
     private let useCase = SearchRepositoriesUseCase()
     private var searchQuery: String = ""
@@ -19,5 +28,9 @@ class SearchRepositoriesViewModel {
     
     func setSearchedQuery(query: String) {
         searchQuery = query
+    }
+    
+    func validateQuery() -> Bool {
+        return !getSearchedQuery().isBlank
     }
 }

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RepositoryCell" rowHeight="141" id="Qnn-2Z-aOV" customClass="RepositoryCell" customModule="RippleRepositories" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="380" height="141"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="Qnn-2Z-aOV" id="7Ki-B3-M2x">
+                <rect key="frame" x="0.0" y="0.0" width="380" height="141"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DRs-Sh-BXO" userLabel="ContainerView">
+                        <rect key="frame" x="10" y="10" width="360" height="120"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RPF-e6-ek4">
+                                <rect key="frame" x="5" y="5" width="110" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="RPF-e6-ek4" secondAttribute="height" multiplier="1:1" id="cBo-6O-Dje"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="F34-s6-y5N">
+                                <rect key="frame" x="125" y="5" width="230" height="110"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MOU-lg-CJM">
+                                        <rect key="frame" x="0.0" y="0.0" width="41.5" height="49"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U7l-j0-AsJ">
+                                        <rect key="frame" x="0.0" y="54" width="41.5" height="56"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="RPF-e6-ek4" firstAttribute="centerY" secondItem="DRs-Sh-BXO" secondAttribute="centerY" id="Bu2-NF-AxE"/>
+                            <constraint firstItem="RPF-e6-ek4" firstAttribute="leading" secondItem="DRs-Sh-BXO" secondAttribute="leading" constant="5" id="G8Y-Iw-qlb"/>
+                            <constraint firstItem="F34-s6-y5N" firstAttribute="leading" secondItem="RPF-e6-ek4" secondAttribute="trailing" constant="10" id="GWV-wE-tbG"/>
+                            <constraint firstAttribute="trailing" secondItem="F34-s6-y5N" secondAttribute="trailing" constant="5" id="RId-2T-moH"/>
+                            <constraint firstAttribute="height" constant="120" id="akb-qG-VYp"/>
+                            <constraint firstAttribute="bottom" secondItem="F34-s6-y5N" secondAttribute="bottom" constant="5" id="hAN-rf-ULy"/>
+                            <constraint firstAttribute="bottom" secondItem="RPF-e6-ek4" secondAttribute="bottom" constant="5" id="m1Z-Tl-rhm"/>
+                            <constraint firstItem="F34-s6-y5N" firstAttribute="top" secondItem="DRs-Sh-BXO" secondAttribute="top" constant="5" id="tFJ-VO-Npc"/>
+                            <constraint firstItem="RPF-e6-ek4" firstAttribute="top" secondItem="DRs-Sh-BXO" secondAttribute="top" constant="5" id="vdB-H9-y5K"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="DRs-Sh-BXO" secondAttribute="trailing" constant="10" id="G25-EO-1UR"/>
+                    <constraint firstItem="DRs-Sh-BXO" firstAttribute="leading" secondItem="7Ki-B3-M2x" secondAttribute="leading" constant="10" id="KdJ-qX-bDI"/>
+                    <constraint firstItem="DRs-Sh-BXO" firstAttribute="top" secondItem="7Ki-B3-M2x" secondAttribute="top" constant="10" id="LlB-1g-q0f"/>
+                    <constraint firstAttribute="bottom" secondItem="DRs-Sh-BXO" secondAttribute="bottom" constant="10" id="s7Y-vU-aho"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="EIk-hz-gth"/>
+            <connections>
+                <outlet property="containerView" destination="DRs-Sh-BXO" id="ecb-K2-KtF"/>
+                <outlet property="repoDescriptionLabel" destination="U7l-j0-AsJ" id="B2Y-Kg-NIZ"/>
+                <outlet property="repoNameLabel" destination="MOU-lg-CJM" id="i9u-SS-FUY"/>
+                <outlet property="repositoryImageView" destination="RPF-e6-ek4" id="fFC-OE-gmJ"/>
+            </connections>
+            <point key="canvasLocation" x="146.37681159420291" y="110.82589285714285"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

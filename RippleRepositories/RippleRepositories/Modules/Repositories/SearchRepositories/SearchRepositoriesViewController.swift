@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Toast_Swift
 
 class SearchRepositoriesViewController: BaseViewController {
 
@@ -13,7 +14,13 @@ class SearchRepositoriesViewController: BaseViewController {
     @IBOutlet weak var searchButton: UIButton!
     
     @IBAction func searchButtonPressed(_ sender: UIButton) {
-        print(viewModel.getSearchedQuery())
+        self.view.hideAllToasts()
+        if viewModel.validateQuery() {
+            openRepositoriesList()
+        }
+        else {
+            self.view.makeToast(Strings.INVALID_SEARCH_QUERY)
+        }
     }
     
     private var viewModel: SearchRepositoriesViewModel!
@@ -39,7 +46,14 @@ class SearchRepositoriesViewController: BaseViewController {
         searchButton.setTitle(Strings.SEARCH, for: .normal)
         searchButton.backgroundColor = Colors.SEARCH_BUTTON_BACKGROUND
         searchButton.setTitleColor(Colors.WHITE, for: .normal)
-        searchButton.cornerRadius = Constants.SEARCH_BUTTON_CORNER_RADIUS
+        searchButton.cornerRadius = Dimensions.APP_CORNER_RADIUS
+    }
+    
+    private func openRepositoriesList() {
+        guard let navigationController = navigationController else { return }
+        let query = viewModel.getSearchedQuery()
+        let navigationManger = NavigationManager(navigationController: navigationController)
+        navigationManger.pushRepositoriesList(query: query)
     }
 }
 

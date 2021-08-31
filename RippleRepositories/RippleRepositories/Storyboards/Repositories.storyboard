@@ -56,6 +56,36 @@
             </objects>
             <point key="canvasLocation" x="918.84057971014499" y="39.508928571428569"/>
         </scene>
+        <!--List Repositories View Controller-->
+        <scene sceneID="aiD-Ul-Tue">
+            <objects>
+                <viewController storyboardIdentifier="ListRepositoriesViewController" id="6u0-rt-bK0" customClass="ListRepositoriesViewController" customModule="RippleRepositories" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="q9z-AC-FcZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="C1i-JU-447">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7cf-Rh-ZPI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7cf-Rh-ZPI" firstAttribute="trailing" secondItem="C1i-JU-447" secondAttribute="trailing" id="26B-A5-slG"/>
+                            <constraint firstItem="7cf-Rh-ZPI" firstAttribute="bottom" secondItem="C1i-JU-447" secondAttribute="bottom" id="kJq-iN-EB3"/>
+                            <constraint firstItem="C1i-JU-447" firstAttribute="top" secondItem="7cf-Rh-ZPI" secondAttribute="top" id="nJQ-P6-4b1"/>
+                            <constraint firstItem="C1i-JU-447" firstAttribute="leading" secondItem="7cf-Rh-ZPI" secondAttribute="leading" id="pv1-08-pge"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="repositoriesTableView" destination="C1i-JU-447" id="ZZh-8n-m7a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x7T-Z2-SBj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1929" y="40"/>
+        </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">

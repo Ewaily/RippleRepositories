@@ -30,5 +30,10 @@ struct NetworkConstants {
     
     struct Parameters {
         static let query            = "q"
+        static let name             = "name"
+        static let owner            = "owner"
+        static let avatarURL       = "avatar_url"
+        static let description      = "description"
+        static let items            = "items"
     }
 }

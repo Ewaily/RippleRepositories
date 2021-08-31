@@ -12,14 +12,14 @@ struct NavigationManager {
     let navigationController: UINavigationController
     
     func pushSearchRepositories() {
-        let searchRecipesView = SearchRepositoriesViewController.instantiate(storyboard: .REPOSITORIES)
-        navigationController.pushViewController(searchRecipesView, animated: true)
+        let searchRepositoriesView = SearchRepositoriesViewController.instantiate(storyboard: .REPOSITORIES)
+        navigationController.pushViewController(searchRepositoriesView, animated: true)
     }
     
-//    func pushRepositoriesList(query: String) {
-//        let recipesListView = RecipesListView.instantiate(storyboard: .RECIPES)
-//        let viewModel = RecipesListViewModel(query: query)
-//        recipesListView.initialize(with: viewModel)
-//        navigationController.pushViewController(recipesListView, animated: true)
-//    }
+    func pushRepositoriesList(query: String) {
+        let rpositoriesListView = ListRepositoriesViewController.instantiate(storyboard: .REPOSITORIES)
+        let viewModel = ListRepositoriesViewModel(query: query)
+        rpositoriesListView.initialize(with: viewModel)
+        navigationController.pushViewController(rpositoriesListView, animated: true)
+    }
 }
