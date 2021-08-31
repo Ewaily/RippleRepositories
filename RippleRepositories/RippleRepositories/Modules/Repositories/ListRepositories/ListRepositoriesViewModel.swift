@@ -13,9 +13,11 @@ protocol ListRepositoriesViewModelOutput {
     func getRepositoryInfo(at index: Int) -> Repository
     func countRepositories() -> Int
     func fetchRepositories(completion: @escaping () -> Void)
+    var navigateToItemDetails: PublishSubject<Repository> { get set }
 }
 
 protocol ListRepositoriesViewModelInput {
+    func didRepoAtIndexPath(_ indexPath: IndexPath)
 }
 
 class ListRepositoriesViewModel: ListRepositoriesViewModelOutput, ListRepositoriesViewModelInput {
@@ -23,6 +25,7 @@ class ListRepositoriesViewModel: ListRepositoriesViewModelOutput, ListRepositori
     let query: String
     private let useCase = ListRepositoriesUseCase()
     var repositories: BehaviorRelay<[Repository]> = .init(value: [])
+    var navigateToItemDetails: PublishSubject<Repository> = .init()
     
     init(query: String) {
         self.query = query
@@ -32,7 +35,7 @@ class ListRepositoriesViewModel: ListRepositoriesViewModelOutput, ListRepositori
         let repository = repositories.value[index]
         return Repository(repoName: repository.repoName,
                           repoDescription: repository.repoDescription,
-                          ownerAvatarURL: repository.ownerAvatarURL)
+                          ownerAvatarURL: repository.ownerAvatarURL, repoURL: repository.repoURL)
     }
     
     func countRepositories() -> Int {
@@ -52,5 +55,10 @@ class ListRepositoriesViewModel: ListRepositoriesViewModelOutput, ListRepositori
                 print(error)
             }
         }
+    }
+    
+    func didRepoAtIndexPath(_ indexPath: IndexPath) {
+        let model = repositories.value[indexPath.row]
+        navigateToItemDetails.onNext(model)
     }
 }

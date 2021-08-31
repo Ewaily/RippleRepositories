@@ -21,6 +21,7 @@ class ListRepositoriesViewController: BaseViewController, UIScrollViewDelegate {
         super.viewDidLoad()
         setupUI()
         setupTableView()
+        bind()
     }
     
     func initialize(with viewModel: ListRepositoriesViewModel) {
@@ -48,6 +49,21 @@ class ListRepositoriesViewController: BaseViewController, UIScrollViewDelegate {
             guard let self = self else { return }
             let info = self.viewModel.getRepositoryInfo(at: index)
             cell.bindCell(info: info)
+        }.disposed(by: disposeBag)
+        
+        repositoriesTableView.rx.itemSelected.subscribe { [weak self]  (indexPath) in
+            guard let self = self, let indexPath = indexPath.element else { return }
+            self.viewModel.didRepoAtIndexPath(indexPath)
+        
+        }.disposed(by: disposeBag)
+    }
+    
+    private func bind() {
+        viewModel.navigateToItemDetails.subscribe { (product) in
+            guard let product = product.element  else { return }
+            if let url = product.repoURL {
+                UIApplication.shared.open(url)
+            }
         }.disposed(by: disposeBag)
     }
     

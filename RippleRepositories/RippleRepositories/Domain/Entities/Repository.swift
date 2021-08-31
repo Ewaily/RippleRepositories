@@ -11,4 +11,5 @@ struct Repository {
     let repoName            : String
     let repoDescription     : String
     let ownerAvatarURL      : URL?
+    let repoURL             : URL?
 }
