@@ -10,10 +10,15 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        window = UIWindow(frame: UIScreen.main.bounds)
+        let searchView = SearchRepositoriesViewController.instantiate(storyboard: .REPOSITORIES)
+        let navigationController = UINavigationController(rootViewController: searchView)
+        window?.rootViewController = navigationController
+        window?.makeKeyAndVisible()
         return true
     }
 

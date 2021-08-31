@@ -9,12 +9,31 @@
 /* Begin PBXBuildFile section */
 		1004F31426DE40310006CF78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1004F31326DE40310006CF78 /* AppDelegate.swift */; };
 		1004F31626DE40310006CF78 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1004F31526DE40310006CF78 /* SceneDelegate.swift */; };
-		1004F31826DE40310006CF78 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1004F31726DE40310006CF78 /* ViewController.swift */; };
-		1004F31B26DE40310006CF78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1004F31926DE40310006CF78 /* Main.storyboard */; };
 		1004F31D26DE40320006CF78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1004F31C26DE40320006CF78 /* Assets.xcassets */; };
 		1004F32026DE40320006CF78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1004F31E26DE40320006CF78 /* LaunchScreen.storyboard */; };
 		1004F32B26DE40320006CF78 /* RippleQueriesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1004F32A26DE40320006CF78 /* RippleQueriesTests.swift */; };
 		1004F33626DE40320006CF78 /* RippleQueriesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1004F33526DE40320006CF78 /* RippleQueriesUITests.swift */; };
+		10DFC17626DE58A000FA5D9B /* ReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DFC17526DE58A000FA5D9B /* ReachabilityManager.swift */; };
+		10DFC17826DE58AD00FA5D9B /* NavigationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DFC17726DE58AD00FA5D9B /* NavigationManager.swift */; };
+		10DFC17A26DE58E100FA5D9B /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DFC17926DE58E100FA5D9B /* Storyboarded.swift */; };
+		10DFC17C26DE590100FA5D9B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DFC17B26DE590100FA5D9B /* Constants.swift */; };
+		10DFC17E26DE594900FA5D9B /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DFC17D26DE594900FA5D9B /* Result.swift */; };
+		10DFC18026DE595A00FA5D9B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DFC17F26DE595A00FA5D9B /* BaseViewController.swift */; };
+		10DFC18526DE5A6A00FA5D9B /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DFC18426DE5A6A00FA5D9B /* Repository.swift */; };
+		10DFC18B26DE5D2500FA5D9B /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DFC18A26DE5D2500FA5D9B /* NetworkConstants.swift */; };
+		10DFC19026DE5E3300FA5D9B /* BaseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DFC18F26DE5E3300FA5D9B /* BaseAPI.swift */; };
+		10DFC19226DE5E8400FA5D9B /* RepositoriesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DFC19126DE5E8400FA5D9B /* RepositoriesAPI.swift */; };
+		10DFC19426DE5F6700FA5D9B /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DFC19326DE5F6700FA5D9B /* BaseRouter.swift */; };
+		10DFC19626DE5F8E00FA5D9B /* RepositoriesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DFC19526DE5F8D00FA5D9B /* RepositoriesRouter.swift */; };
+		10DFC19B26DE61C900FA5D9B /* SearchRepositoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DFC19A26DE61C900FA5D9B /* SearchRepositoriesViewModel.swift */; };
+		10DFC19D26DE621E00FA5D9B /* SearchRepositoriesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DFC19C26DE621E00FA5D9B /* SearchRepositoriesUseCase.swift */; };
+		10DFC19F26DE625C00FA5D9B /* SearchRepositoriesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DFC19E26DE625C00FA5D9B /* SearchRepositoriesRepository.swift */; };
+		10DFC1A126DE674500FA5D9B /* Repositories.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10DFC1A026DE674500FA5D9B /* Repositories.storyboard */; };
+		10DFC1A326DE679B00FA5D9B /* SearchRepositoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DFC1A226DE679B00FA5D9B /* SearchRepositoriesViewController.swift */; };
+		10DFC1A526DE681600FA5D9B /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DFC1A426DE681600FA5D9B /* SearchTextField.swift */; };
+		10DFC1A726DE682600FA5D9B /* SearchTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10DFC1A626DE682600FA5D9B /* SearchTextField.xib */; };
+		10DFC1A926DE685D00FA5D9B /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DFC1A826DE685D00FA5D9B /* UIView.swift */; };
+		10DFC1AB26DE77FA00FA5D9B /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DFC1AA26DE77FA00FA5D9B /* UIViewController.swift */; };
 		4786332EFB151866FD126D35 /* Pods_RippleRepositoriesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59BA24E25A7993E0E2758A71 /* Pods_RippleRepositoriesTests.framework */; };
 		84C3E4FC409C4FC2FA430E33 /* Pods_RippleRepositories_RippleRepositoriesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34E00C57940CC09A4F75C260 /* Pods_RippleRepositories_RippleRepositoriesUITests.framework */; };
 		B8D2B6B68B798BB518A2EC5B /* Pods_RippleRepositories.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCE89CAC8806DAA06AEAEEE9 /* Pods_RippleRepositories.framework */; };
@@ -41,8 +60,6 @@
 		1004F31026DE40310006CF78 /* RippleRepositories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RippleRepositories.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1004F31326DE40310006CF78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1004F31526DE40310006CF78 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1004F31726DE40310006CF78 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1004F31A26DE40310006CF78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1004F31C26DE40320006CF78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1004F31F26DE40320006CF78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1004F32126DE40320006CF78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -52,6 +69,27 @@
 		1004F33126DE40320006CF78 /* RippleRepositoriesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RippleRepositoriesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1004F33526DE40320006CF78 /* RippleQueriesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RippleQueriesUITests.swift; sourceTree = "<group>"; };
 		1004F33726DE40320006CF78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10DFC17526DE58A000FA5D9B /* ReachabilityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityManager.swift; sourceTree = "<group>"; };
+		10DFC17726DE58AD00FA5D9B /* NavigationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationManager.swift; sourceTree = "<group>"; };
+		10DFC17926DE58E100FA5D9B /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		10DFC17B26DE590100FA5D9B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		10DFC17D26DE594900FA5D9B /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		10DFC17F26DE595A00FA5D9B /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		10DFC18426DE5A6A00FA5D9B /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		10DFC18A26DE5D2500FA5D9B /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
+		10DFC18F26DE5E3300FA5D9B /* BaseAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAPI.swift; sourceTree = "<group>"; };
+		10DFC19126DE5E8400FA5D9B /* RepositoriesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesAPI.swift; sourceTree = "<group>"; };
+		10DFC19326DE5F6700FA5D9B /* BaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
+		10DFC19526DE5F8D00FA5D9B /* RepositoriesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesRouter.swift; sourceTree = "<group>"; };
+		10DFC19A26DE61C900FA5D9B /* SearchRepositoriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepositoriesViewModel.swift; sourceTree = "<group>"; };
+		10DFC19C26DE621E00FA5D9B /* SearchRepositoriesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepositoriesUseCase.swift; sourceTree = "<group>"; };
+		10DFC19E26DE625C00FA5D9B /* SearchRepositoriesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepositoriesRepository.swift; sourceTree = "<group>"; };
+		10DFC1A026DE674500FA5D9B /* Repositories.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Repositories.storyboard; sourceTree = "<group>"; };
+		10DFC1A226DE679B00FA5D9B /* SearchRepositoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepositoriesViewController.swift; sourceTree = "<group>"; };
+		10DFC1A426DE681600FA5D9B /* SearchTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextField.swift; sourceTree = "<group>"; };
+		10DFC1A626DE682600FA5D9B /* SearchTextField.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchTextField.xib; sourceTree = "<group>"; };
+		10DFC1A826DE685D00FA5D9B /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		10DFC1AA26DE77FA00FA5D9B /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		28C777DED6FE4D1A7C71A8C3 /* Pods-RippleRepositories.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RippleRepositories.release.xcconfig"; path = "Target Support Files/Pods-RippleRepositories/Pods-RippleRepositories.release.xcconfig"; sourceTree = "<group>"; };
 		34E00C57940CC09A4F75C260 /* Pods_RippleRepositories_RippleRepositoriesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RippleRepositories_RippleRepositoriesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		35C582B12AEF9B67C55B783E /* Pods-RippleRepositoriesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RippleRepositoriesTests.debug.xcconfig"; path = "Target Support Files/Pods-RippleRepositoriesTests/Pods-RippleRepositoriesTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -132,13 +170,14 @@
 		1004F31226DE40310006CF78 /* RippleRepositories */ = {
 			isa = PBXGroup;
 			children = (
-				1004F31326DE40310006CF78 /* AppDelegate.swift */,
-				1004F31526DE40310006CF78 /* SceneDelegate.swift */,
-				1004F31726DE40310006CF78 /* ViewController.swift */,
-				1004F31926DE40310006CF78 /* Main.storyboard */,
-				1004F31C26DE40320006CF78 /* Assets.xcassets */,
-				1004F31E26DE40320006CF78 /* LaunchScreen.storyboard */,
-				1004F32126DE40320006CF78 /* Info.plist */,
+				10DFC16B26DE579900FA5D9B /* Delegates */,
+				10DFC16D26DE57BA00FA5D9B /* Storyboards */,
+				10DFC17026DE586700FA5D9B /* Global */,
+				10DFC18126DE59CF00FA5D9B /* Domain */,
+				10DFC18626DE5CE100FA5D9B /* Data */,
+				10DFC19726DE619300FA5D9B /* Modules */,
+				10DFC16C26DE57AE00FA5D9B /* Resources */,
+				10DFC16E26DE57C600FA5D9B /* Supporting Files */,
 			);
 			path = RippleRepositories;
 			sourceTree = "<group>";
@@ -159,6 +198,200 @@
 				1004F33726DE40320006CF78 /* Info.plist */,
 			);
 			path = RippleRepositoriesUITests;
+			sourceTree = "<group>";
+		};
+		10DFC16B26DE579900FA5D9B /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				1004F31326DE40310006CF78 /* AppDelegate.swift */,
+				1004F31526DE40310006CF78 /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		10DFC16C26DE57AE00FA5D9B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1004F31C26DE40320006CF78 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		10DFC16D26DE57BA00FA5D9B /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				1004F31E26DE40320006CF78 /* LaunchScreen.storyboard */,
+				10DFC1A026DE674500FA5D9B /* Repositories.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		10DFC16E26DE57C600FA5D9B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1004F32126DE40320006CF78 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		10DFC17026DE586700FA5D9B /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				10DFC17426DE589300FA5D9B /* Xibs */,
+				10DFC17326DE588B00FA5D9B /* Managers */,
+				10DFC17226DE588300FA5D9B /* Extensions */,
+				10DFC17126DE587C00FA5D9B /* Protocols */,
+				10DFC17B26DE590100FA5D9B /* Constants.swift */,
+				10DFC17D26DE594900FA5D9B /* Result.swift */,
+				10DFC17F26DE595A00FA5D9B /* BaseViewController.swift */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		10DFC17126DE587C00FA5D9B /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				10DFC17926DE58E100FA5D9B /* Storyboarded.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		10DFC17226DE588300FA5D9B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				10DFC1A826DE685D00FA5D9B /* UIView.swift */,
+				10DFC1AA26DE77FA00FA5D9B /* UIViewController.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		10DFC17326DE588B00FA5D9B /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				10DFC17526DE58A000FA5D9B /* ReachabilityManager.swift */,
+				10DFC17726DE58AD00FA5D9B /* NavigationManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		10DFC17426DE589300FA5D9B /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				10DFC1A426DE681600FA5D9B /* SearchTextField.swift */,
+				10DFC1A626DE682600FA5D9B /* SearchTextField.xib */,
+			);
+			path = Xibs;
+			sourceTree = "<group>";
+		};
+		10DFC18126DE59CF00FA5D9B /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				10DFC18326DE59E400FA5D9B /* Entities */,
+				10DFC18226DE59DD00FA5D9B /* UseCases */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		10DFC18226DE59DD00FA5D9B /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				10DFC19C26DE621E00FA5D9B /* SearchRepositoriesUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		10DFC18326DE59E400FA5D9B /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				10DFC18426DE5A6A00FA5D9B /* Repository.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		10DFC18626DE5CE100FA5D9B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				10DFC18926DE5D0D00FA5D9B /* Repositories */,
+				10DFC18826DE5D0600FA5D9B /* Network */,
+				10DFC18726DE5CFF00FA5D9B /* PersistantStorage */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		10DFC18726DE5CFF00FA5D9B /* PersistantStorage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PersistantStorage;
+			sourceTree = "<group>";
+		};
+		10DFC18826DE5D0600FA5D9B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				10DFC18E26DE5E2600FA5D9B /* APIs */,
+				10DFC18D26DE5E1E00FA5D9B /* Routers */,
+				10DFC18C26DE5E1000FA5D9B /* DataMapping */,
+				10DFC18A26DE5D2500FA5D9B /* NetworkConstants.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		10DFC18926DE5D0D00FA5D9B /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				10DFC19E26DE625C00FA5D9B /* SearchRepositoriesRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		10DFC18C26DE5E1000FA5D9B /* DataMapping */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataMapping;
+			sourceTree = "<group>";
+		};
+		10DFC18D26DE5E1E00FA5D9B /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				10DFC19526DE5F8D00FA5D9B /* RepositoriesRouter.swift */,
+				10DFC19326DE5F6700FA5D9B /* BaseRouter.swift */,
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
+		10DFC18E26DE5E2600FA5D9B /* APIs */ = {
+			isa = PBXGroup;
+			children = (
+				10DFC19126DE5E8400FA5D9B /* RepositoriesAPI.swift */,
+				10DFC18F26DE5E3300FA5D9B /* BaseAPI.swift */,
+			);
+			path = APIs;
+			sourceTree = "<group>";
+		};
+		10DFC19726DE619300FA5D9B /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				10DFC19826DE61A100FA5D9B /* Repositories */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		10DFC19826DE61A100FA5D9B /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				10DFC19926DE61AE00FA5D9B /* SearchRepositories */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		10DFC19926DE61AE00FA5D9B /* SearchRepositories */ = {
+			isa = PBXGroup;
+			children = (
+				10DFC19A26DE61C900FA5D9B /* SearchRepositoriesViewModel.swift */,
+				10DFC1A226DE679B00FA5D9B /* SearchRepositoriesViewController.swift */,
+			);
+			path = SearchRepositories;
 			sourceTree = "<group>";
 		};
 		47CBBB5EE74734C3586E0EA6 /* Pods */ = {
@@ -290,7 +523,8 @@
 			files = (
 				1004F32026DE40320006CF78 /* LaunchScreen.storyboard in Resources */,
 				1004F31D26DE40320006CF78 /* Assets.xcassets in Resources */,
-				1004F31B26DE40310006CF78 /* Main.storyboard in Resources */,
+				10DFC1A126DE674500FA5D9B /* Repositories.storyboard in Resources */,
+				10DFC1A726DE682600FA5D9B /* SearchTextField.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,9 +652,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1004F31826DE40310006CF78 /* ViewController.swift in Sources */,
+				10DFC1A926DE685D00FA5D9B /* UIView.swift in Sources */,
 				1004F31426DE40310006CF78 /* AppDelegate.swift in Sources */,
+				10DFC19D26DE621E00FA5D9B /* SearchRepositoriesUseCase.swift in Sources */,
+				10DFC17826DE58AD00FA5D9B /* NavigationManager.swift in Sources */,
+				10DFC19626DE5F8E00FA5D9B /* RepositoriesRouter.swift in Sources */,
+				10DFC1A326DE679B00FA5D9B /* SearchRepositoriesViewController.swift in Sources */,
+				10DFC18B26DE5D2500FA5D9B /* NetworkConstants.swift in Sources */,
+				10DFC17A26DE58E100FA5D9B /* Storyboarded.swift in Sources */,
+				10DFC19F26DE625C00FA5D9B /* SearchRepositoriesRepository.swift in Sources */,
+				10DFC17626DE58A000FA5D9B /* ReachabilityManager.swift in Sources */,
+				10DFC17E26DE594900FA5D9B /* Result.swift in Sources */,
+				10DFC1A526DE681600FA5D9B /* SearchTextField.swift in Sources */,
+				10DFC19226DE5E8400FA5D9B /* RepositoriesAPI.swift in Sources */,
+				10DFC19426DE5F6700FA5D9B /* BaseRouter.swift in Sources */,
+				10DFC1AB26DE77FA00FA5D9B /* UIViewController.swift in Sources */,
+				10DFC19026DE5E3300FA5D9B /* BaseAPI.swift in Sources */,
+				10DFC18026DE595A00FA5D9B /* BaseViewController.swift in Sources */,
 				1004F31626DE40310006CF78 /* SceneDelegate.swift in Sources */,
+				10DFC17C26DE590100FA5D9B /* Constants.swift in Sources */,
+				10DFC19B26DE61C900FA5D9B /* SearchRepositoriesViewModel.swift in Sources */,
+				10DFC18526DE5A6A00FA5D9B /* Repository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,14 +708,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		1004F31926DE40310006CF78 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1004F31A26DE40310006CF78 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1004F31E26DE40320006CF78 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -599,7 +843,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6675BR2529;
-				INFOPLIST_FILE = RippleRepositories/Info.plist;
+				INFOPLIST_FILE = "RippleRepositories/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -619,7 +863,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6675BR2529;
-				INFOPLIST_FILE = RippleRepositories/Info.plist;
+				INFOPLIST_FILE = "RippleRepositories/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

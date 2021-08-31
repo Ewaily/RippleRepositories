@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchTextField" customModule="UChef" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="TOk-JZ-4Fu" id="Uwt-pu-hdS"/>
+                <outlet property="textField" destination="gjw-T5-EXl" id="4cP-cd-Qfk"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="459" height="91"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TOk-JZ-4Fu" userLabel="ContainerView">
+                    <rect key="frame" x="0.0" y="0.0" width="459" height="91"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gjw-T5-EXl" userLabel="TextField">
+                            <rect key="frame" x="30" y="6" width="419" height="80"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search" translatesAutoresizingMaskIntoConstraints="NO" id="YTc-4g-RTt" userLabel="searchImage">
+                            <rect key="frame" x="10" y="38" width="15" height="15"/>
+                            <color key="tintColor" name="PrimaryColor"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="15" id="LmI-TE-Hx6"/>
+                                <constraint firstAttribute="height" constant="15" id="cx2-Im-S3h"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="YTc-4g-RTt" firstAttribute="leading" secondItem="TOk-JZ-4Fu" secondAttribute="leading" constant="10" id="4BA-vj-6Za"/>
+                        <constraint firstAttribute="bottom" secondItem="gjw-T5-EXl" secondAttribute="bottom" constant="5" id="4Jf-W6-dPw"/>
+                        <constraint firstAttribute="trailing" secondItem="gjw-T5-EXl" secondAttribute="trailing" constant="10" id="JWx-bv-Nn8"/>
+                        <constraint firstItem="YTc-4g-RTt" firstAttribute="centerY" secondItem="TOk-JZ-4Fu" secondAttribute="centerY" id="UVJ-iV-90e"/>
+                        <constraint firstItem="gjw-T5-EXl" firstAttribute="top" secondItem="TOk-JZ-4Fu" secondAttribute="top" constant="6" id="Ufh-Di-wU3"/>
+                        <constraint firstItem="gjw-T5-EXl" firstAttribute="leading" secondItem="YTc-4g-RTt" secondAttribute="trailing" constant="5" id="jbj-uM-Rts"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <constraints>
+                <constraint firstItem="TOk-JZ-4Fu" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="FIb-HM-6Q2"/>
+                <constraint firstItem="TOk-JZ-4Fu" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="eL6-vy-bcY"/>
+                <constraint firstAttribute="bottom" secondItem="TOk-JZ-4Fu" secondAttribute="bottom" id="pyK-Mf-5Dl"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="TOk-JZ-4Fu" secondAttribute="trailing" id="rAk-ak-9k5"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="41.304347826086961" y="136.27232142857142"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="search" width="8" height="8"/>
+        <namedColor name="PrimaryColor">
+            <color red="1" green="0.4823529411764706" blue="0.32941176470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

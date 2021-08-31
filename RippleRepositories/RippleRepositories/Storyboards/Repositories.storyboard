@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Search Repositories View Controller-->
+        <scene sceneID="0be-dA-rD1">
+            <objects>
+                <viewController storyboardIdentifier="SearchRepositoriesViewController" id="EtC-9B-bqc" customClass="SearchRepositoriesViewController" customModule="RippleRepositories" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WYt-6j-AB7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wyl-Od-O43" customClass="SearchTextField" customModule="RippleRepositories" customModuleProvider="target">
+                                <rect key="frame" x="20" y="49" width="374" height="40"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="EqL-Mn-An2"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kJb-rm-vrs">
+                                <rect key="frame" x="162" y="109" width="90" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="14j-iK-NP8"/>
+                                    <constraint firstAttribute="height" constant="30" id="V4Y-TU-6uS"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="searchButtonPressed:" destination="EtC-9B-bqc" eventType="touchUpInside" id="Iad-Qw-EDA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="her-p5-baB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="kJb-rm-vrs" firstAttribute="top" secondItem="Wyl-Od-O43" secondAttribute="bottom" constant="20" id="CBS-Aa-fdd"/>
+                            <constraint firstItem="her-p5-baB" firstAttribute="trailing" secondItem="Wyl-Od-O43" secondAttribute="trailing" constant="20" id="FOl-dD-zbk"/>
+                            <constraint firstItem="Wyl-Od-O43" firstAttribute="leading" secondItem="her-p5-baB" secondAttribute="leading" constant="20" id="cfR-66-wPV"/>
+                            <constraint firstItem="kJb-rm-vrs" firstAttribute="centerX" secondItem="WYt-6j-AB7" secondAttribute="centerX" id="d19-um-Qdo"/>
+                            <constraint firstItem="Wyl-Od-O43" firstAttribute="top" secondItem="her-p5-baB" secondAttribute="top" constant="5" id="dpA-UD-CD1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="I9t-md-d9t"/>
+                    <connections>
+                        <outlet property="searchButton" destination="kJb-rm-vrs" id="8hf-HM-AZL"/>
+                        <outlet property="searchTextField" destination="Wyl-Od-O43" id="WMh-LO-FFN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OmX-c0-ieg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="918.84057971014499" y="39.508928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
