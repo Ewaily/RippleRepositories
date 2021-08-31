@@ -6,6 +6,12 @@ target 'RippleQueries' do
   use_frameworks!
 
   # Pods for RippleQueries
+	pod 'RxSwift'
+	pod 'RxCocoa'
+	pod 'Alamofire'
+	pod 'SwiftyJSON'
+	pod 'SDWebImage'
+	pod 'Toast-Swift'
 
   target 'RippleQueriesTests' do
     inherit! :search_paths
