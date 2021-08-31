@@ -1,0 +1,6 @@
+framework module Pods_RippleRepositoriesTests {
+  umbrella header "Pods-RippleRepositoriesTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
