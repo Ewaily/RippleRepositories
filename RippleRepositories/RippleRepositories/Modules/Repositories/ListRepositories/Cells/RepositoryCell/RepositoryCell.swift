@@ -50,6 +50,7 @@ class RepositoryCell: UITableViewCell {
         repositoryImageView.clipsToBounds = true
         repositoryImageView.contentMode = .scaleAspectFill
         repositoryImageView.sd_imageTransition = .fade
+        repositoryImageView.sd_imageIndicator = SDWebImageActivityIndicator.gray
     }
     
     private func setupRepositoryTitleLabel() {

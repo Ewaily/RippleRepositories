@@ -10,6 +10,7 @@ import Foundation
 struct ListRepositoriesRepository {
     
     let remoteSource: RepositoriesAPIProtocol
+    private let cacheSource: SearchRepositoriesStorage = SearchRepositoriesStorage()
     
     init(remote: RepositoriesAPIProtocol) {
         self.remoteSource = remote
@@ -24,6 +25,20 @@ struct ListRepositoriesRepository {
             case .failure(let error):
                 completion(.failure(error))
             }
+        }
+    }
+    
+    func cacheRepositories(repositories: [Repository], completion: @escaping () -> Void) {
+        cacheSource.cacheRepositories(repositories: repositories)
+        completion()
+    }
+    
+    func fetchCachedRepositories(completion: @escaping (Result<[Repository], String>) -> Void) {
+        if let cachedRepositories = cacheSource.getCachedRepositories() {
+            completion(.success(cachedRepositories))
+        }
+        else {
+            completion(.failure("Error"))
         }
     }
 }

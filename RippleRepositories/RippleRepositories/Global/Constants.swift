@@ -17,6 +17,9 @@ struct Strings {
     static let REPOSITORIES_LIST = "Repositories List"
     static let INVALID_SEARCH_QUERY = "Invalid search query"
     static let NO_INTERNET_CONNECTION = "No internet connection"
+    static let WOULD_YOU_LIKE_TO_VIEW_THE_LAST_SUCCESSFUL_QUERY = "Would you like to view the last successful query?"
+    static let YES = "Yes"
+    static let NO = "No"
 }
 
 struct Fonts {
@@ -51,4 +54,8 @@ struct Dimensions {
 struct Images {
     static let NO_INTERNET_IMAGE = UIImage(named: "noInternectConnection")
     static let NO_SEARCH_RESULTS = UIImage(named: "noResultFound")
+}
+
+struct Constants {
+    static let isCachedQueriesKey = "is_cached_latest_queries"
 }

@@ -14,6 +14,9 @@ protocol ListRepositoriesViewModelOutput {
     func countRepositories() -> Int
     func fetchRepositories(completion: @escaping () -> Void)
     var navigateToItemDetails: PublishSubject<Repository> { get set }
+    func cacheLatestRepositories(completion: @escaping () -> Void)
+    func fetchCachedRepositories(completion: @escaping () -> Void)
+    func fetchLiveRepositories(completion: @escaping () -> Void)
 }
 
 protocol ListRepositoriesViewModelInput {
@@ -42,14 +45,18 @@ class ListRepositoriesViewModel: ListRepositoriesViewModelOutput, ListRepositori
         return repositories.value.count
     }
     
-    func fetchRepositories(completion: @escaping () -> Void) {
+    func fetchLiveRepositories(completion: @escaping () -> Void) {
         useCase.fetchRepositories(query: query) { [weak self] result in
             guard let self = self else { return }
             switch result {
             case .success(let repositories):
                 self.repositories.accept(repositories)
-                print(repositories)
-                completion()
+                if self.repositories.value.isEmpty {
+                    completion()
+                }
+                else {
+                    self.cacheLatestRepositories(completion: completion)
+                }
             case .failure(let error):
                 completion()
                 print(error)
@@ -60,5 +67,37 @@ class ListRepositoriesViewModel: ListRepositoriesViewModelOutput, ListRepositori
     func didRepoAtIndexPath(_ indexPath: IndexPath) {
         let model = repositories.value[indexPath.row]
         navigateToItemDetails.onNext(model)
+    }
+    
+    func cacheLatestRepositories(completion: @escaping () -> Void) {
+        useCase.cacheRepositories(repositories: self.repositories.value, completion: completion)
+    }
+    
+    func fetchCachedRepositories(completion: @escaping () -> Void) {
+        useCase.fetchCachedRepositories { [weak self] result in
+            guard let self = self else { return }
+            switch result {
+            case .success(let repositories):
+                self.repositories.accept(repositories)
+                if self.repositories.value.isEmpty {
+                    completion()
+                }
+                else {
+                    self.cacheLatestRepositories(completion: completion)
+                }
+            case .failure(let error):
+                completion()
+                print(error)
+            }
+        }
+    }
+    
+    func fetchRepositories(completion: @escaping () -> Void) {
+        if ReachabilityManager.isReachable() {
+            self.fetchLiveRepositories(completion: completion)
+        }
+        else {
+            self.fetchCachedRepositories(completion: completion)
+        }
     }
 }

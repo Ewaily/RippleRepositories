@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Repository: Equatable {
+struct Repository: Equatable, Codable {
     static func ==(lhs: Repository, rhs: Repository) -> Bool {
         return lhs.repoName == rhs.repoName && lhs.repoURL == rhs.repoURL
     }

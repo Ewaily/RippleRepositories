@@ -14,4 +14,12 @@ struct ListRepositoriesUseCase {
     func fetchRepositories(query: String, completion: @escaping (Result<[Repository], String>) -> Void) {
         repository.fetchRepositories(query: query, completion: completion)
     }
+    
+    func cacheRepositories(repositories: [Repository], completion: @escaping () -> Void) {
+        repository.cacheRepositories(repositories: repositories, completion: completion)
+    }
+    
+    func fetchCachedRepositories(completion: @escaping (Result<[Repository], String>) -> Void) {
+        repository.fetchCachedRepositories(completion: completion)
+    }
 }

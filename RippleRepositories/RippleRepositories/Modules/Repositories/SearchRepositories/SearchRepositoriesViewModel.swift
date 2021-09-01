@@ -13,6 +13,8 @@ protocol SearchRepositoriesViewModelOutput {
     func getSearchedQuery() -> String
     func validateQuery() -> Bool
     var isConnectionReachable: (PublishSubject<Bool>) { get set }
+    func checkIsCachedQueries()
+    var showCachedAlert: (PublishSubject<Bool>) { get set }
 }
 
 protocol SearchRepositoriesViewModelInput {
@@ -25,6 +27,8 @@ class SearchRepositoriesViewModel:SearchRepositoriesViewModelOutput, SearchRepos
     private let useCase = SearchRepositoriesUseCase()
     private var searchQuery: String = ""
     var isConnectionReachable: (PublishSubject<Bool>) = .init()
+    private let userDefault = UserDefaults.standard
+    var showCachedAlert: (PublishSubject<Bool>) = .init()
     
     func getSearchedQuery() -> String {
         return searchQuery
@@ -39,6 +43,15 @@ class SearchRepositoriesViewModel:SearchRepositoriesViewModelOutput, SearchRepos
     }
     
      func didPressSearchBtn() {
-        isConnectionReachable.onNext(ReachabilityManager.isReachable())
+        let isReachable = ReachabilityManager.isReachable()
+        isConnectionReachable.onNext(isReachable)
+        if !isReachable {
+            checkIsCachedQueries()
+        }
+    }
+    
+    func checkIsCachedQueries() {
+        let isCachedQueries = userDefault.bool(forKey: Constants.isCachedQueriesKey)
+        showCachedAlert.onNext(isCachedQueries)
     }
 }

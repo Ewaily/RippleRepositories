@@ -15,7 +15,7 @@ class SearchRepositoriesViewController: BaseViewController {
     @IBOutlet var searchButton: UIButton!
     
     private var viewModel: SearchRepositoriesViewModel!
-
+    
     @IBAction func searchButtonPressed(_ sender: UIButton) {
         self.view.hideAllToasts()
         viewModel.didPressSearchBtn()
@@ -66,9 +66,30 @@ class SearchRepositoriesViewController: BaseViewController {
                 }
             }
             else {
-                self.view.makeToast(Strings.NO_INTERNET_CONNECTION)
+                self.viewModel.showCachedAlert.subscribe { [weak self] value in
+                    guard let self = self, let value = value.element else { return }
+                    if value {
+                        self.displayNoConnectionAlert()
+                    }
+                    else {
+                        self.view.makeToast(Strings.NO_INTERNET_CONNECTION)
+                    }
+                }.disposed(by: self.disposeBag)
             }
         }.disposed(by: disposeBag)
+    }
+    
+    private func displayNoConnectionAlert() {
+        let alert = UIAlertController(title: Strings.NO_INTERNET_CONNECTION, message: Strings.WOULD_YOU_LIKE_TO_VIEW_THE_LAST_SUCCESSFUL_QUERY, preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: Strings.YES, style: .default, handler: { [weak self] _ in
+            guard let self = self else { return }
+            self.openRepositoriesList()
+        }))
+        
+        alert.addAction(UIAlertAction(title: Strings.NO, style: .cancel, handler: nil))
+        
+        self.present(alert, animated: true)
     }
 }
 

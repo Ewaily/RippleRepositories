@@ -17,6 +17,8 @@
 		1025C3A926DF008800FF98BA /* RepositoryAPIMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1025C3A826DF008800FF98BA /* RepositoryAPIMock.swift */; };
 		1025C3AB26DF010C00FF98BA /* ListRepositoriesRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1025C3AA26DF010C00FF98BA /* ListRepositoriesRepositoryTests.swift */; };
 		1025C3AD26DF033700FF98BA /* DataMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1025C3AC26DF033700FF98BA /* DataMocks.swift */; };
+		10DE886526DFFA5300F181F1 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DE886426DFFA5300F181F1 /* UIImage.swift */; };
+		10DE886726DFFD2600F181F1 /* SearchRepositoriesStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DE886626DFFD2600F181F1 /* SearchRepositoriesStorage.swift */; };
 		10DFC17626DE58A000FA5D9B /* ReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DFC17526DE58A000FA5D9B /* ReachabilityManager.swift */; };
 		10DFC17826DE58AD00FA5D9B /* NavigationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DFC17726DE58AD00FA5D9B /* NavigationManager.swift */; };
 		10DFC17A26DE58E100FA5D9B /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DFC17926DE58E100FA5D9B /* Storyboarded.swift */; };
@@ -93,6 +95,8 @@
 		1025C3A826DF008800FF98BA /* RepositoryAPIMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryAPIMock.swift; sourceTree = "<group>"; };
 		1025C3AA26DF010C00FF98BA /* ListRepositoriesRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRepositoriesRepositoryTests.swift; sourceTree = "<group>"; };
 		1025C3AC26DF033700FF98BA /* DataMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataMocks.swift; sourceTree = "<group>"; };
+		10DE886426DFFA5300F181F1 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		10DE886626DFFD2600F181F1 /* SearchRepositoriesStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepositoriesStorage.swift; sourceTree = "<group>"; };
 		10DFC17526DE58A000FA5D9B /* ReachabilityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityManager.swift; sourceTree = "<group>"; };
 		10DFC17726DE58AD00FA5D9B /* NavigationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationManager.swift; sourceTree = "<group>"; };
 		10DFC17926DE58E100FA5D9B /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
@@ -331,6 +335,7 @@
 				10DFC1A826DE685D00FA5D9B /* UIView.swift */,
 				10DFC1AA26DE77FA00FA5D9B /* UIViewController.swift */,
 				10DFC1D026DEC10500FA5D9B /* String.swift */,
+				10DE886426DFFA5300F181F1 /* UIImage.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -392,6 +397,7 @@
 		10DFC18726DE5CFF00FA5D9B /* PersistantStorage */ = {
 			isa = PBXGroup;
 			children = (
+				10DE886626DFFD2600F181F1 /* SearchRepositoriesStorage.swift */,
 			);
 			path = PersistantStorage;
 			sourceTree = "<group>";
@@ -799,6 +805,7 @@
 				10DFC19D26DE621E00FA5D9B /* SearchRepositoriesUseCase.swift in Sources */,
 				10DFC17826DE58AD00FA5D9B /* NavigationManager.swift in Sources */,
 				10DFC19626DE5F8E00FA5D9B /* RepositoriesRouter.swift in Sources */,
+				10DE886726DFFD2600F181F1 /* SearchRepositoriesStorage.swift in Sources */,
 				10DFC1A326DE679B00FA5D9B /* SearchRepositoriesViewController.swift in Sources */,
 				10DFC18B26DE5D2500FA5D9B /* NetworkConstants.swift in Sources */,
 				10DFC17A26DE58E100FA5D9B /* Storyboarded.swift in Sources */,
@@ -814,6 +821,7 @@
 				10DFC1AB26DE77FA00FA5D9B /* UIViewController.swift in Sources */,
 				10DFC19026DE5E3300FA5D9B /* BaseAPI.swift in Sources */,
 				10DFC18026DE595A00FA5D9B /* BaseViewController.swift in Sources */,
+				10DE886526DFFA5300F181F1 /* UIImage.swift in Sources */,
 				10DFC1B626DE843800FA5D9B /* ListRepositoriesViewModel.swift in Sources */,
 				10DFC1B826DE869000FA5D9B /* ListRepositoriesUseCase.swift in Sources */,
 				10DFC1B126DE828A00FA5D9B /* RepositoryCell.swift in Sources */,
