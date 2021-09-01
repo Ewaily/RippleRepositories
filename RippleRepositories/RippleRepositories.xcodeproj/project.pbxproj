@@ -13,6 +13,10 @@
 		1004F32026DE40320006CF78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1004F31E26DE40320006CF78 /* LaunchScreen.storyboard */; };
 		1004F32B26DE40320006CF78 /* RippleQueriesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1004F32A26DE40320006CF78 /* RippleQueriesTests.swift */; };
 		1004F33626DE40320006CF78 /* RippleQueriesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1004F33526DE40320006CF78 /* RippleQueriesUITests.swift */; };
+		1025C3A526DEFCAC00FF98BA /* ReposSearchResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 1025C3A426DEFCAC00FF98BA /* ReposSearchResponse.json */; };
+		1025C3A926DF008800FF98BA /* RepositoryAPIMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1025C3A826DF008800FF98BA /* RepositoryAPIMock.swift */; };
+		1025C3AB26DF010C00FF98BA /* ListRepositoriesRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1025C3AA26DF010C00FF98BA /* ListRepositoriesRepositoryTests.swift */; };
+		1025C3AD26DF033700FF98BA /* DataMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1025C3AC26DF033700FF98BA /* DataMocks.swift */; };
 		10DFC17626DE58A000FA5D9B /* ReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DFC17526DE58A000FA5D9B /* ReachabilityManager.swift */; };
 		10DFC17826DE58AD00FA5D9B /* NavigationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DFC17726DE58AD00FA5D9B /* NavigationManager.swift */; };
 		10DFC17A26DE58E100FA5D9B /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DFC17926DE58E100FA5D9B /* Storyboarded.swift */; };
@@ -85,6 +89,10 @@
 		1004F33126DE40320006CF78 /* RippleRepositoriesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RippleRepositoriesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1004F33526DE40320006CF78 /* RippleQueriesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RippleQueriesUITests.swift; sourceTree = "<group>"; };
 		1004F33726DE40320006CF78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1025C3A426DEFCAC00FF98BA /* ReposSearchResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ReposSearchResponse.json; sourceTree = "<group>"; };
+		1025C3A826DF008800FF98BA /* RepositoryAPIMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryAPIMock.swift; sourceTree = "<group>"; };
+		1025C3AA26DF010C00FF98BA /* ListRepositoriesRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRepositoriesRepositoryTests.swift; sourceTree = "<group>"; };
+		1025C3AC26DF033700FF98BA /* DataMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataMocks.swift; sourceTree = "<group>"; };
 		10DFC17526DE58A000FA5D9B /* ReachabilityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityManager.swift; sourceTree = "<group>"; };
 		10DFC17726DE58AD00FA5D9B /* NavigationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationManager.swift; sourceTree = "<group>"; };
 		10DFC17926DE58E100FA5D9B /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
@@ -217,6 +225,7 @@
 		1004F32926DE40320006CF78 /* RippleRepositoriesTests */ = {
 			isa = PBXGroup;
 			children = (
+				1025C3A626DF003B00FF98BA /* ListRepositoriesTests */,
 				1004F32A26DE40320006CF78 /* RippleQueriesTests.swift */,
 				1004F32C26DE40320006CF78 /* Info.plist */,
 			);
@@ -232,6 +241,32 @@
 			path = RippleRepositoriesUITests;
 			sourceTree = "<group>";
 		};
+		1025C3A626DF003B00FF98BA /* ListRepositoriesTests */ = {
+			isa = PBXGroup;
+			children = (
+				1025C3A726DF007000FF98BA /* Mock */,
+				1025C3AA26DF010C00FF98BA /* ListRepositoriesRepositoryTests.swift */,
+			);
+			path = ListRepositoriesTests;
+			sourceTree = "<group>";
+		};
+		1025C3A726DF007000FF98BA /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				1025C3A826DF008800FF98BA /* RepositoryAPIMock.swift */,
+				1025C3AC26DF033700FF98BA /* DataMocks.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		10C367A926DF0D3900F138E8 /* JSONs */ = {
+			isa = PBXGroup;
+			children = (
+				1025C3A426DEFCAC00FF98BA /* ReposSearchResponse.json */,
+			);
+			path = JSONs;
+			sourceTree = "<group>";
+		};
 		10DFC16B26DE579900FA5D9B /* Delegates */ = {
 			isa = PBXGroup;
 			children = (
@@ -244,6 +279,7 @@
 		10DFC16C26DE57AE00FA5D9B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				10C367A926DF0D3900F138E8 /* JSONs */,
 				10DFC1C326DE8CF200FA5D9B /* Fonts */,
 				1004F31C26DE40320006CF78 /* Assets.xcassets */,
 			);
@@ -628,6 +664,7 @@
 				10DFC1B226DE828A00FA5D9B /* RepositoryCell.xib in Resources */,
 				10DFC1C126DE8B1300FA5D9B /* TableEmptyStateCell.xib in Resources */,
 				10DFC1A726DE682600FA5D9B /* SearchTextField.xib in Resources */,
+				1025C3A526DEFCAC00FF98BA /* ReposSearchResponse.json in Resources */,
 				10DFC1CF26DE8D0200FA5D9B /* SFUIText-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -792,6 +829,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1025C3AB26DF010C00FF98BA /* ListRepositoriesRepositoryTests.swift in Sources */,
+				1025C3AD26DF033700FF98BA /* DataMocks.swift in Sources */,
+				1025C3A926DF008800FF98BA /* RepositoryAPIMock.swift in Sources */,
 				1004F32B26DE40320006CF78 /* RippleQueriesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -995,7 +1035,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6675BR2529;
-				INFOPLIST_FILE = RippleQueriesTests/Info.plist;
+				INFOPLIST_FILE = RippleRepositoriesTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1018,7 +1058,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6675BR2529;
-				INFOPLIST_FILE = RippleQueriesTests/Info.plist;
+				INFOPLIST_FILE = RippleRepositoriesTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1040,7 +1080,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6675BR2529;
-				INFOPLIST_FILE = RippleQueriesUITests/Info.plist;
+				INFOPLIST_FILE = RippleRepositoriesUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1061,7 +1101,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6675BR2529;
-				INFOPLIST_FILE = RippleQueriesUITests/Info.plist;
+				INFOPLIST_FILE = RippleRepositoriesUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

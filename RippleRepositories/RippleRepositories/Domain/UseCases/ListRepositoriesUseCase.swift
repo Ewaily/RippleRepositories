@@ -9,10 +9,9 @@ import Foundation
 
 struct ListRepositoriesUseCase {
     
-    private let repository = ListRepositoriesRepository()
+    private let repository = ListRepositoriesRepository(remote: RepositoriesAPI())
     
     func fetchRepositories(query: String, completion: @escaping (Result<[Repository], String>) -> Void) {
         repository.fetchRepositories(query: query, completion: completion)
     }
-    
 }

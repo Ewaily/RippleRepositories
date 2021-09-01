@@ -8,10 +8,20 @@
 import Alamofire
 import SwiftyJSON
 
+protocol RepositoriesAPIProtocol {
+    func search(query: String,
+                completion: @escaping (Result<SearchResponseDTO, String>) -> Void)
+}
+
 struct RepositoriesAPI: BaseAPI {
+}
+
+// MARK: - RepositoriesAPIProtocol
+
+extension RepositoriesAPI: RepositoriesAPIProtocol {
     
     func search(query: String,
-                       completion: @escaping (Result<SearchResponseDTO, String>) -> Void) {
+                completion: @escaping (Result<SearchResponseDTO, String>) -> Void) {
         request(request: RepositoriesRouter.search(query: query)) { result in
             switch result {
             case .success(let json):
@@ -21,6 +31,5 @@ struct RepositoriesAPI: BaseAPI {
                 completion(.failure(error.localizedDescription))
             }
         }
-        
     }
 }

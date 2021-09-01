@@ -9,7 +9,11 @@ import Foundation
 
 struct ListRepositoriesRepository {
     
-    let remoteSource = RepositoriesAPI()
+    let remoteSource: RepositoriesAPIProtocol
+    
+    init(remote: RepositoriesAPIProtocol) {
+        self.remoteSource = remote
+    }
     
     func fetchRepositories(query: String, completion: @escaping (Result<[Repository], String>) -> Void) {
         remoteSource.search(query: query) { result in
