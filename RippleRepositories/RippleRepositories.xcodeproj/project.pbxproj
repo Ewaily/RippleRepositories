@@ -11,11 +11,10 @@
 		1004F31626DE40310006CF78 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1004F31526DE40310006CF78 /* SceneDelegate.swift */; };
 		1004F31D26DE40320006CF78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1004F31C26DE40320006CF78 /* Assets.xcassets */; };
 		1004F32026DE40320006CF78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1004F31E26DE40320006CF78 /* LaunchScreen.storyboard */; };
-		1004F32B26DE40320006CF78 /* RippleQueriesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1004F32A26DE40320006CF78 /* RippleQueriesTests.swift */; };
 		1004F33626DE40320006CF78 /* RippleQueriesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1004F33526DE40320006CF78 /* RippleQueriesUITests.swift */; };
 		1025C3A526DEFCAC00FF98BA /* ReposSearchResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 1025C3A426DEFCAC00FF98BA /* ReposSearchResponse.json */; };
 		1025C3A926DF008800FF98BA /* RepositoryAPIMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1025C3A826DF008800FF98BA /* RepositoryAPIMock.swift */; };
-		1025C3AB26DF010C00FF98BA /* ListRepositoriesRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1025C3AA26DF010C00FF98BA /* ListRepositoriesRepositoryTests.swift */; };
+		1025C3AB26DF010C00FF98BA /* ListRepositoriesMockRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1025C3AA26DF010C00FF98BA /* ListRepositoriesMockRepositoryTests.swift */; };
 		10D880F326E05AAC00F091E1 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DFC1D026DEC10500FA5D9B /* String.swift */; };
 		10D880F426E05AAC00F091E1 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DFC1A826DE685D00FA5D9B /* UIView.swift */; };
 		10D880F526E05AAC00F091E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1004F31326DE40310006CF78 /* AppDelegate.swift */; };
@@ -63,6 +62,7 @@
 		10D8812126E05AAC00F091E1 /* SFUIText-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 10DFC1C926DE8D0200FA5D9B /* SFUIText-Bold.ttf */; };
 		10D8812A26E05B5900F091E1 /* DataMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1025C3AC26DF033700FF98BA /* DataMocks.swift */; };
 		10D8812B26E05B5900F091E1 /* DataMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1025C3AC26DF033700FF98BA /* DataMocks.swift */; };
+		10D9475926E140AB00782DAA /* ListRepositoriesRemoteRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D9475826E140AB00782DAA /* ListRepositoriesRemoteRepositoryTests.swift */; };
 		10DE886526DFFA5300F181F1 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DE886426DFFA5300F181F1 /* UIImage.swift */; };
 		10DE886726DFFD2600F181F1 /* SearchRepositoriesStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DE886626DFFD2600F181F1 /* SearchRepositoriesStorage.swift */; };
 		10DFC17626DE58A000FA5D9B /* ReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DFC17526DE58A000FA5D9B /* ReachabilityManager.swift */; };
@@ -132,17 +132,17 @@
 		1004F31F26DE40320006CF78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1004F32126DE40320006CF78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1004F32626DE40320006CF78 /* RippleRepositoriesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RippleRepositoriesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1004F32A26DE40320006CF78 /* RippleQueriesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RippleQueriesTests.swift; sourceTree = "<group>"; };
 		1004F32C26DE40320006CF78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1004F33126DE40320006CF78 /* RippleRepositoriesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RippleRepositoriesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1004F33526DE40320006CF78 /* RippleQueriesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RippleQueriesUITests.swift; sourceTree = "<group>"; };
 		1004F33726DE40320006CF78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1025C3A426DEFCAC00FF98BA /* ReposSearchResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ReposSearchResponse.json; sourceTree = "<group>"; };
 		1025C3A826DF008800FF98BA /* RepositoryAPIMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryAPIMock.swift; sourceTree = "<group>"; };
-		1025C3AA26DF010C00FF98BA /* ListRepositoriesRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRepositoriesRepositoryTests.swift; sourceTree = "<group>"; };
+		1025C3AA26DF010C00FF98BA /* ListRepositoriesMockRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRepositoriesMockRepositoryTests.swift; sourceTree = "<group>"; };
 		1025C3AC26DF033700FF98BA /* DataMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataMocks.swift; sourceTree = "<group>"; };
 		10D8812626E05AAC00F091E1 /* RippleRepositories_Mock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RippleRepositories_Mock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10D8812726E05AAC00F091E1 /* RippleRepositories_Mock-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "RippleRepositories_Mock-Info.plist"; path = "/Users/muhammadewaily/Development/RippleRepositories/RippleRepositories/RippleRepositories_Mock-Info.plist"; sourceTree = "<absolute>"; };
+		10D9475826E140AB00782DAA /* ListRepositoriesRemoteRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRepositoriesRemoteRepositoryTests.swift; sourceTree = "<group>"; };
 		10DE886426DFFA5300F181F1 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		10DE886626DFFD2600F181F1 /* SearchRepositoriesStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepositoriesStorage.swift; sourceTree = "<group>"; };
 		10DFC17526DE58A000FA5D9B /* ReachabilityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityManager.swift; sourceTree = "<group>"; };
@@ -287,7 +287,6 @@
 			isa = PBXGroup;
 			children = (
 				1025C3A626DF003B00FF98BA /* ListRepositoriesTests */,
-				1004F32A26DE40320006CF78 /* RippleQueriesTests.swift */,
 				1004F32C26DE40320006CF78 /* Info.plist */,
 			);
 			path = RippleRepositoriesTests;
@@ -305,8 +304,8 @@
 		1025C3A626DF003B00FF98BA /* ListRepositoriesTests */ = {
 			isa = PBXGroup;
 			children = (
+				10D9475726E1408B00782DAA /* Remote */,
 				1025C3A726DF007000FF98BA /* Mock */,
-				1025C3AA26DF010C00FF98BA /* ListRepositoriesRepositoryTests.swift */,
 			);
 			path = ListRepositoriesTests;
 			sourceTree = "<group>";
@@ -314,6 +313,7 @@
 		1025C3A726DF007000FF98BA /* Mock */ = {
 			isa = PBXGroup;
 			children = (
+				1025C3AA26DF010C00FF98BA /* ListRepositoriesMockRepositoryTests.swift */,
 				1025C3A826DF008800FF98BA /* RepositoryAPIMock.swift */,
 			);
 			path = Mock;
@@ -341,6 +341,14 @@
 				10D8812726E05AAC00F091E1 /* RippleRepositories_Mock-Info.plist */,
 			);
 			path = Mock;
+			sourceTree = "<group>";
+		};
+		10D9475726E1408B00782DAA /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				10D9475826E140AB00782DAA /* ListRepositoriesRemoteRepositoryTests.swift */,
+			);
+			path = Remote;
 			sourceTree = "<group>";
 		};
 		10DFC16B26DE579900FA5D9B /* Delegates */ = {
@@ -991,9 +999,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1025C3AB26DF010C00FF98BA /* ListRepositoriesRepositoryTests.swift in Sources */,
+				10D9475926E140AB00782DAA /* ListRepositoriesRemoteRepositoryTests.swift in Sources */,
+				1025C3AB26DF010C00FF98BA /* ListRepositoriesMockRepositoryTests.swift in Sources */,
 				1025C3A926DF008800FF98BA /* RepositoryAPIMock.swift in Sources */,
-				1004F32B26DE40320006CF78 /* RippleQueriesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
