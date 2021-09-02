@@ -62,6 +62,9 @@ class SearchTextField: UIView {
         textField.font = .systemFont(ofSize: 14)
         textField.textColor = Colors.DARK_SHADE
         textField.clearButtonMode = .whileEditing
+        #if MOCK
+        textField.text = "ripple"
+        #endif
     }
 
     private func setPlaceholder(placeholder: String) {

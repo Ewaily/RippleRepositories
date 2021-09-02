@@ -39,15 +39,23 @@ class SearchRepositoriesViewModel:SearchRepositoriesViewModelOutput, SearchRepos
     }
     
     func validateQuery() -> Bool {
+        #if REMOTE
         return !getSearchedQuery().isBlank
+        #else
+        return true
+        #endif
     }
     
      func didPressSearchBtn() {
+        #if REMOTE
         let isReachable = ReachabilityManager.isReachable()
         isConnectionReachable.onNext(isReachable)
         if !isReachable {
             checkIsCachedQueries()
         }
+        #else
+        isConnectionReachable.onNext(true)
+        #endif
     }
     
     func checkIsCachedQueries() {

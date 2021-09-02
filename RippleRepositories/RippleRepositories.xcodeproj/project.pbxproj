@@ -16,7 +16,53 @@
 		1025C3A526DEFCAC00FF98BA /* ReposSearchResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 1025C3A426DEFCAC00FF98BA /* ReposSearchResponse.json */; };
 		1025C3A926DF008800FF98BA /* RepositoryAPIMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1025C3A826DF008800FF98BA /* RepositoryAPIMock.swift */; };
 		1025C3AB26DF010C00FF98BA /* ListRepositoriesRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1025C3AA26DF010C00FF98BA /* ListRepositoriesRepositoryTests.swift */; };
-		1025C3AD26DF033700FF98BA /* DataMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1025C3AC26DF033700FF98BA /* DataMocks.swift */; };
+		10D880F326E05AAC00F091E1 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DFC1D026DEC10500FA5D9B /* String.swift */; };
+		10D880F426E05AAC00F091E1 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DFC1A826DE685D00FA5D9B /* UIView.swift */; };
+		10D880F526E05AAC00F091E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1004F31326DE40310006CF78 /* AppDelegate.swift */; };
+		10D880F626E05AAC00F091E1 /* SearchRepositoriesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DFC19C26DE621E00FA5D9B /* SearchRepositoriesUseCase.swift */; };
+		10D880F726E05AAC00F091E1 /* NavigationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DFC17726DE58AD00FA5D9B /* NavigationManager.swift */; };
+		10D880F826E05AAC00F091E1 /* RepositoriesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DFC19526DE5F8D00FA5D9B /* RepositoriesRouter.swift */; };
+		10D880F926E05AAC00F091E1 /* SearchRepositoriesStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DE886626DFFD2600F181F1 /* SearchRepositoriesStorage.swift */; };
+		10D880FA26E05AAC00F091E1 /* SearchRepositoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DFC1A226DE679B00FA5D9B /* SearchRepositoriesViewController.swift */; };
+		10D880FB26E05AAC00F091E1 /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DFC18A26DE5D2500FA5D9B /* NetworkConstants.swift */; };
+		10D880FC26E05AAC00F091E1 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DFC17926DE58E100FA5D9B /* Storyboarded.swift */; };
+		10D880FD26E05AAC00F091E1 /* ListRepositoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DFC1B326DE842600FA5D9B /* ListRepositoriesViewController.swift */; };
+		10D880FE26E05AAC00F091E1 /* SearchRepositoriesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DFC19E26DE625C00FA5D9B /* SearchRepositoriesRepository.swift */; };
+		10D880FF26E05AAC00F091E1 /* ReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DFC17526DE58A000FA5D9B /* ReachabilityManager.swift */; };
+		10D8810026E05AAC00F091E1 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DFC17D26DE594900FA5D9B /* Result.swift */; };
+		10D8810126E05AAC00F091E1 /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DFC1A426DE681600FA5D9B /* SearchTextField.swift */; };
+		10D8810226E05AAC00F091E1 /* SearchResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DFC1BB26DE876700FA5D9B /* SearchResponseDTO.swift */; };
+		10D8810326E05AAC00F091E1 /* RepositoriesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DFC19126DE5E8400FA5D9B /* RepositoriesAPI.swift */; };
+		10D8810426E05AAC00F091E1 /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DFC19326DE5F6700FA5D9B /* BaseRouter.swift */; };
+		10D8810526E05AAC00F091E1 /* TableEmptyStateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DFC1BE26DE8B1300FA5D9B /* TableEmptyStateCell.swift */; };
+		10D8810626E05AAC00F091E1 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DFC1AA26DE77FA00FA5D9B /* UIViewController.swift */; };
+		10D8810726E05AAC00F091E1 /* BaseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DFC18F26DE5E3300FA5D9B /* BaseAPI.swift */; };
+		10D8810826E05AAC00F091E1 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DFC17F26DE595A00FA5D9B /* BaseViewController.swift */; };
+		10D8810926E05AAC00F091E1 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DE886426DFFA5300F181F1 /* UIImage.swift */; };
+		10D8810A26E05AAC00F091E1 /* ListRepositoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DFC1B526DE843800FA5D9B /* ListRepositoriesViewModel.swift */; };
+		10D8810B26E05AAC00F091E1 /* ListRepositoriesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DFC1B726DE869000FA5D9B /* ListRepositoriesUseCase.swift */; };
+		10D8810C26E05AAC00F091E1 /* RepositoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DFC1AF26DE828A00FA5D9B /* RepositoryCell.swift */; };
+		10D8810D26E05AAC00F091E1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1004F31526DE40310006CF78 /* SceneDelegate.swift */; };
+		10D8810E26E05AAC00F091E1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DFC17B26DE590100FA5D9B /* Constants.swift */; };
+		10D8810F26E05AAC00F091E1 /* SearchRepositoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DFC19A26DE61C900FA5D9B /* SearchRepositoriesViewModel.swift */; };
+		10D8811026E05AAC00F091E1 /* ListRepositoriesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DFC1B926DE86CD00FA5D9B /* ListRepositoriesRepository.swift */; };
+		10D8811126E05AAC00F091E1 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DFC18426DE5A6A00FA5D9B /* Repository.swift */; };
+		10D8811326E05AAC00F091E1 /* Pods_RippleRepositories.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCE89CAC8806DAA06AEAEEE9 /* Pods_RippleRepositories.framework */; };
+		10D8811526E05AAC00F091E1 /* SFUIText-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 10DFC1C826DE8D0200FA5D9B /* SFUIText-Semibold.ttf */; };
+		10D8811626E05AAC00F091E1 /* SFUIText-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 10DFC1C626DE8D0200FA5D9B /* SFUIText-Regular.ttf */; };
+		10D8811726E05AAC00F091E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1004F31E26DE40320006CF78 /* LaunchScreen.storyboard */; };
+		10D8811826E05AAC00F091E1 /* SFUIText-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 10DFC1C526DE8D0200FA5D9B /* SFUIText-Medium.ttf */; };
+		10D8811926E05AAC00F091E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1004F31C26DE40320006CF78 /* Assets.xcassets */; };
+		10D8811A26E05AAC00F091E1 /* Repositories.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10DFC1A026DE674500FA5D9B /* Repositories.storyboard */; };
+		10D8811B26E05AAC00F091E1 /* SFUIText-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 10DFC1C726DE8D0200FA5D9B /* SFUIText-Light.ttf */; };
+		10D8811C26E05AAC00F091E1 /* SFUIText-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 10DFC1C426DE8D0200FA5D9B /* SFUIText-Heavy.ttf */; };
+		10D8811D26E05AAC00F091E1 /* RepositoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10DFC1B026DE828A00FA5D9B /* RepositoryCell.xib */; };
+		10D8811E26E05AAC00F091E1 /* TableEmptyStateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10DFC1BF26DE8B1300FA5D9B /* TableEmptyStateCell.xib */; };
+		10D8811F26E05AAC00F091E1 /* SearchTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10DFC1A626DE682600FA5D9B /* SearchTextField.xib */; };
+		10D8812026E05AAC00F091E1 /* ReposSearchResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 1025C3A426DEFCAC00FF98BA /* ReposSearchResponse.json */; };
+		10D8812126E05AAC00F091E1 /* SFUIText-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 10DFC1C926DE8D0200FA5D9B /* SFUIText-Bold.ttf */; };
+		10D8812A26E05B5900F091E1 /* DataMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1025C3AC26DF033700FF98BA /* DataMocks.swift */; };
+		10D8812B26E05B5900F091E1 /* DataMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1025C3AC26DF033700FF98BA /* DataMocks.swift */; };
 		10DE886526DFFA5300F181F1 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DE886426DFFA5300F181F1 /* UIImage.swift */; };
 		10DE886726DFFD2600F181F1 /* SearchRepositoriesStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DE886626DFFD2600F181F1 /* SearchRepositoriesStorage.swift */; };
 		10DFC17626DE58A000FA5D9B /* ReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DFC17526DE58A000FA5D9B /* ReachabilityManager.swift */; };
@@ -95,6 +141,8 @@
 		1025C3A826DF008800FF98BA /* RepositoryAPIMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryAPIMock.swift; sourceTree = "<group>"; };
 		1025C3AA26DF010C00FF98BA /* ListRepositoriesRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRepositoriesRepositoryTests.swift; sourceTree = "<group>"; };
 		1025C3AC26DF033700FF98BA /* DataMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataMocks.swift; sourceTree = "<group>"; };
+		10D8812626E05AAC00F091E1 /* RippleRepositories_Mock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RippleRepositories_Mock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		10D8812726E05AAC00F091E1 /* RippleRepositories_Mock-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "RippleRepositories_Mock-Info.plist"; path = "/Users/muhammadewaily/Development/RippleRepositories/RippleRepositories/RippleRepositories_Mock-Info.plist"; sourceTree = "<absolute>"; };
 		10DE886426DFFA5300F181F1 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		10DE886626DFFD2600F181F1 /* SearchRepositoriesStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepositoriesStorage.swift; sourceTree = "<group>"; };
 		10DFC17526DE58A000FA5D9B /* ReachabilityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityManager.swift; sourceTree = "<group>"; };
@@ -176,6 +224,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		10D8811226E05AAC00F091E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10D8811326E05AAC00F091E1 /* Pods_RippleRepositories.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -207,6 +263,7 @@
 				1004F31026DE40310006CF78 /* RippleRepositories.app */,
 				1004F32626DE40320006CF78 /* RippleRepositoriesTests.xctest */,
 				1004F33126DE40320006CF78 /* RippleRepositoriesUITests.xctest */,
+				10D8812626E05AAC00F091E1 /* RippleRepositories_Mock.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -258,7 +315,6 @@
 			isa = PBXGroup;
 			children = (
 				1025C3A826DF008800FF98BA /* RepositoryAPIMock.swift */,
-				1025C3AC26DF033700FF98BA /* DataMocks.swift */,
 			);
 			path = Mock;
 			sourceTree = "<group>";
@@ -269,6 +325,22 @@
 				1025C3A426DEFCAC00FF98BA /* ReposSearchResponse.json */,
 			);
 			path = JSONs;
+			sourceTree = "<group>";
+		};
+		10D8812826E05ACF00F091E1 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				1004F32126DE40320006CF78 /* Info.plist */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		10D8812926E05AD800F091E1 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				10D8812726E05AAC00F091E1 /* RippleRepositories_Mock-Info.plist */,
+			);
+			path = Mock;
 			sourceTree = "<group>";
 		};
 		10DFC16B26DE579900FA5D9B /* Delegates */ = {
@@ -302,7 +374,8 @@
 		10DFC16E26DE57C600FA5D9B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				1004F32126DE40320006CF78 /* Info.plist */,
+				10D8812826E05ACF00F091E1 /* Remote */,
+				10D8812926E05AD800F091E1 /* Mock */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -398,6 +471,7 @@
 			isa = PBXGroup;
 			children = (
 				10DE886626DFFD2600F181F1 /* SearchRepositoriesStorage.swift */,
+				1025C3AC26DF033700FF98BA /* DataMocks.swift */,
 			);
 			path = PersistantStorage;
 			sourceTree = "<group>";
@@ -612,6 +686,25 @@
 			productReference = 1004F33126DE40320006CF78 /* RippleRepositoriesUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		10D880F026E05AAC00F091E1 /* RippleRepositories_Mock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10D8812326E05AAC00F091E1 /* Build configuration list for PBXNativeTarget "RippleRepositories_Mock" */;
+			buildPhases = (
+				10D880F126E05AAC00F091E1 /* [CP] Check Pods Manifest.lock */,
+				10D880F226E05AAC00F091E1 /* Sources */,
+				10D8811226E05AAC00F091E1 /* Frameworks */,
+				10D8811426E05AAC00F091E1 /* Resources */,
+				10D8812226E05AAC00F091E1 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RippleRepositories_Mock;
+			productName = RippleQueries;
+			productReference = 10D8812626E05AAC00F091E1 /* RippleRepositories_Mock.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -650,6 +743,7 @@
 				1004F30F26DE40310006CF78 /* RippleRepositories */,
 				1004F32526DE40320006CF78 /* RippleRepositoriesTests */,
 				1004F33026DE40320006CF78 /* RippleRepositoriesUITests */,
+				10D880F026E05AAC00F091E1 /* RippleRepositories_Mock */,
 			);
 		};
 /* End PBXProject section */
@@ -689,9 +783,68 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		10D8811426E05AAC00F091E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10D8811526E05AAC00F091E1 /* SFUIText-Semibold.ttf in Resources */,
+				10D8811626E05AAC00F091E1 /* SFUIText-Regular.ttf in Resources */,
+				10D8811726E05AAC00F091E1 /* LaunchScreen.storyboard in Resources */,
+				10D8811826E05AAC00F091E1 /* SFUIText-Medium.ttf in Resources */,
+				10D8811926E05AAC00F091E1 /* Assets.xcassets in Resources */,
+				10D8811A26E05AAC00F091E1 /* Repositories.storyboard in Resources */,
+				10D8811B26E05AAC00F091E1 /* SFUIText-Light.ttf in Resources */,
+				10D8811C26E05AAC00F091E1 /* SFUIText-Heavy.ttf in Resources */,
+				10D8811D26E05AAC00F091E1 /* RepositoryCell.xib in Resources */,
+				10D8811E26E05AAC00F091E1 /* TableEmptyStateCell.xib in Resources */,
+				10D8811F26E05AAC00F091E1 /* SearchTextField.xib in Resources */,
+				10D8812026E05AAC00F091E1 /* ReposSearchResponse.json in Resources */,
+				10D8812126E05AAC00F091E1 /* SFUIText-Bold.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		10D880F126E05AAC00F091E1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RippleRepositories-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		10D8812226E05AAC00F091E1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RippleRepositories/Pods-RippleRepositories-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RippleRepositories/Pods-RippleRepositories-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RippleRepositories/Pods-RippleRepositories-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C81C4E4017D958C90EA4A0AC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -800,6 +953,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				10DFC1D126DEC10500FA5D9B /* String.swift in Sources */,
+				10D8812B26E05B5900F091E1 /* DataMocks.swift in Sources */,
 				10DFC1A926DE685D00FA5D9B /* UIView.swift in Sources */,
 				1004F31426DE40310006CF78 /* AppDelegate.swift in Sources */,
 				10DFC19D26DE621E00FA5D9B /* SearchRepositoriesUseCase.swift in Sources */,
@@ -838,7 +992,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1025C3AB26DF010C00FF98BA /* ListRepositoriesRepositoryTests.swift in Sources */,
-				1025C3AD26DF033700FF98BA /* DataMocks.swift in Sources */,
 				1025C3A926DF008800FF98BA /* RepositoryAPIMock.swift in Sources */,
 				1004F32B26DE40320006CF78 /* RippleQueriesTests.swift in Sources */,
 			);
@@ -849,6 +1002,45 @@
 			buildActionMask = 2147483647;
 			files = (
 				1004F33626DE40320006CF78 /* RippleQueriesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10D880F226E05AAC00F091E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10D880F326E05AAC00F091E1 /* String.swift in Sources */,
+				10D8812A26E05B5900F091E1 /* DataMocks.swift in Sources */,
+				10D880F426E05AAC00F091E1 /* UIView.swift in Sources */,
+				10D880F526E05AAC00F091E1 /* AppDelegate.swift in Sources */,
+				10D880F626E05AAC00F091E1 /* SearchRepositoriesUseCase.swift in Sources */,
+				10D880F726E05AAC00F091E1 /* NavigationManager.swift in Sources */,
+				10D880F826E05AAC00F091E1 /* RepositoriesRouter.swift in Sources */,
+				10D880F926E05AAC00F091E1 /* SearchRepositoriesStorage.swift in Sources */,
+				10D880FA26E05AAC00F091E1 /* SearchRepositoriesViewController.swift in Sources */,
+				10D880FB26E05AAC00F091E1 /* NetworkConstants.swift in Sources */,
+				10D880FC26E05AAC00F091E1 /* Storyboarded.swift in Sources */,
+				10D880FD26E05AAC00F091E1 /* ListRepositoriesViewController.swift in Sources */,
+				10D880FE26E05AAC00F091E1 /* SearchRepositoriesRepository.swift in Sources */,
+				10D880FF26E05AAC00F091E1 /* ReachabilityManager.swift in Sources */,
+				10D8810026E05AAC00F091E1 /* Result.swift in Sources */,
+				10D8810126E05AAC00F091E1 /* SearchTextField.swift in Sources */,
+				10D8810226E05AAC00F091E1 /* SearchResponseDTO.swift in Sources */,
+				10D8810326E05AAC00F091E1 /* RepositoriesAPI.swift in Sources */,
+				10D8810426E05AAC00F091E1 /* BaseRouter.swift in Sources */,
+				10D8810526E05AAC00F091E1 /* TableEmptyStateCell.swift in Sources */,
+				10D8810626E05AAC00F091E1 /* UIViewController.swift in Sources */,
+				10D8810726E05AAC00F091E1 /* BaseAPI.swift in Sources */,
+				10D8810826E05AAC00F091E1 /* BaseViewController.swift in Sources */,
+				10D8810926E05AAC00F091E1 /* UIImage.swift in Sources */,
+				10D8810A26E05AAC00F091E1 /* ListRepositoriesViewModel.swift in Sources */,
+				10D8810B26E05AAC00F091E1 /* ListRepositoriesUseCase.swift in Sources */,
+				10D8810C26E05AAC00F091E1 /* RepositoryCell.swift in Sources */,
+				10D8810D26E05AAC00F091E1 /* SceneDelegate.swift in Sources */,
+				10D8810E26E05AAC00F091E1 /* Constants.swift in Sources */,
+				10D8810F26E05AAC00F091E1 /* SearchRepositoriesViewModel.swift in Sources */,
+				10D8811026E05AAC00F091E1 /* ListRepositoriesRepository.swift in Sources */,
+				10D8811126E05AAC00F091E1 /* Repository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1003,11 +1195,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6675BR2529;
-				INFOPLIST_FILE = "RippleRepositories/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "RippleRepositories/Supporting Files/Remote/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_SWIFT_FLAGS = "-DREMOTE";
 				PRODUCT_BUNDLE_IDENTIFIER = ewaily.RippleRepositories;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -1023,11 +1216,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6675BR2529;
-				INFOPLIST_FILE = "RippleRepositories/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "RippleRepositories/Supporting Files/Remote/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_SWIFT_FLAGS = "-DREMOTE";
 				PRODUCT_BUNDLE_IDENTIFIER = ewaily.RippleRepositories;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -1123,6 +1317,48 @@
 			};
 			name = Release;
 		};
+		10D8812426E05AAC00F091E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AF9CB9FF203BE8D27FDCD78 /* Pods-RippleRepositories.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6675BR2529;
+				INFOPLIST_FILE = "RippleRepositories_Mock-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_SWIFT_FLAGS = "-DMOCK";
+				PRODUCT_BUNDLE_IDENTIFIER = ewaily.RippleRepositories;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		10D8812526E05AAC00F091E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28C777DED6FE4D1A7C71A8C3 /* Pods-RippleRepositories.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6675BR2529;
+				INFOPLIST_FILE = "RippleRepositories_Mock-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_SWIFT_FLAGS = "-DMOCK";
+				PRODUCT_BUNDLE_IDENTIFIER = ewaily.RippleRepositories;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1158,6 +1394,15 @@
 			buildConfigurations = (
 				1004F34126DE40320006CF78 /* Debug */,
 				1004F34226DE40320006CF78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		10D8812326E05AAC00F091E1 /* Build configuration list for PBXNativeTarget "RippleRepositories_Mock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10D8812426E05AAC00F091E1 /* Debug */,
+				10D8812526E05AAC00F091E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
