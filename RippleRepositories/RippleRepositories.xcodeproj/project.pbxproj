@@ -278,8 +278,8 @@
 				10DFC16D26DE57BA00FA5D9B /* Storyboards */,
 				10DFC17026DE586700FA5D9B /* Global */,
 				10DFC18126DE59CF00FA5D9B /* Domain */,
+				10DFC19726DE619300FA5D9B /* Presentation */,
 				10DFC18626DE5CE100FA5D9B /* Data */,
-				10DFC19726DE619300FA5D9B /* Modules */,
 				10DFC16C26DE57AE00FA5D9B /* Resources */,
 				10DFC16E26DE57C600FA5D9B /* Supporting Files */,
 			);
@@ -320,6 +320,38 @@
 				1025C3A826DF008800FF98BA /* RepositoryAPIMock.swift */,
 			);
 			path = Mock;
+			sourceTree = "<group>";
+		};
+		10B68E2426E2705C0076809A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				10DFC19A26DE61C900FA5D9B /* SearchRepositoriesViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		10B68E2526E270650076809A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				10DFC1A226DE679B00FA5D9B /* SearchRepositoriesViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		10B68E2626E270770076809A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				10DFC1B326DE842600FA5D9B /* ListRepositoriesViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		10B68E2726E2707D0076809A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				10DFC1B526DE843800FA5D9B /* ListRepositoriesViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		10C367A926DF0D3900F138E8 /* JSONs */ = {
@@ -534,28 +566,20 @@
 			path = APIs;
 			sourceTree = "<group>";
 		};
-		10DFC19726DE619300FA5D9B /* Modules */ = {
-			isa = PBXGroup;
-			children = (
-				10DFC19826DE61A100FA5D9B /* Repositories */,
-			);
-			path = Modules;
-			sourceTree = "<group>";
-		};
-		10DFC19826DE61A100FA5D9B /* Repositories */ = {
+		10DFC19726DE619300FA5D9B /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
 				10DFC19926DE61AE00FA5D9B /* SearchRepositories */,
 				10DFC1AC26DE824A00FA5D9B /* ListRepositories */,
 			);
-			path = Repositories;
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 		10DFC19926DE61AE00FA5D9B /* SearchRepositories */ = {
 			isa = PBXGroup;
 			children = (
-				10DFC19A26DE61C900FA5D9B /* SearchRepositoriesViewModel.swift */,
-				10DFC1A226DE679B00FA5D9B /* SearchRepositoriesViewController.swift */,
+				10B68E2526E270650076809A /* View */,
+				10B68E2426E2705C0076809A /* ViewModel */,
 			);
 			path = SearchRepositories;
 			sourceTree = "<group>";
@@ -564,8 +588,8 @@
 			isa = PBXGroup;
 			children = (
 				10DFC1AD26DE826100FA5D9B /* Cells */,
-				10DFC1B326DE842600FA5D9B /* ListRepositoriesViewController.swift */,
-				10DFC1B526DE843800FA5D9B /* ListRepositoriesViewModel.swift */,
+				10B68E2626E270770076809A /* View */,
+				10B68E2726E2707D0076809A /* ViewModel */,
 			);
 			path = ListRepositories;
 			sourceTree = "<group>";
