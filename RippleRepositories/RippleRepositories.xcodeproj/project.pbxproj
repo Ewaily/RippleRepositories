@@ -63,6 +63,8 @@
 		10D8812A26E05B5900F091E1 /* DataMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1025C3AC26DF033700FF98BA /* DataMocks.swift */; };
 		10D8812B26E05B5900F091E1 /* DataMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1025C3AC26DF033700FF98BA /* DataMocks.swift */; };
 		10D9475926E140AB00782DAA /* ListRepositoriesRemoteRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D9475826E140AB00782DAA /* ListRepositoriesRemoteRepositoryTests.swift */; };
+		10DC6C3726E2389D0042A122 /* LaunchScreenMock.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10DC6C3626E2389D0042A122 /* LaunchScreenMock.storyboard */; };
+		10DC6C3826E2389D0042A122 /* LaunchScreenMock.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10DC6C3626E2389D0042A122 /* LaunchScreenMock.storyboard */; };
 		10DE886526DFFA5300F181F1 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DE886426DFFA5300F181F1 /* UIImage.swift */; };
 		10DE886726DFFD2600F181F1 /* SearchRepositoriesStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DE886626DFFD2600F181F1 /* SearchRepositoriesStorage.swift */; };
 		10DFC17626DE58A000FA5D9B /* ReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DFC17526DE58A000FA5D9B /* ReachabilityManager.swift */; };
@@ -143,6 +145,7 @@
 		10D8812626E05AAC00F091E1 /* RippleRepositories_Mock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RippleRepositories_Mock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10D8812726E05AAC00F091E1 /* RippleRepositories_Mock-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "RippleRepositories_Mock-Info.plist"; path = "/Users/muhammadewaily/Development/RippleRepositories/RippleRepositories/RippleRepositories_Mock-Info.plist"; sourceTree = "<absolute>"; };
 		10D9475826E140AB00782DAA /* ListRepositoriesRemoteRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRepositoriesRemoteRepositoryTests.swift; sourceTree = "<group>"; };
+		10DC6C3626E2389D0042A122 /* LaunchScreenMock.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreenMock.storyboard; sourceTree = "<group>"; };
 		10DE886426DFFA5300F181F1 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		10DE886626DFFD2600F181F1 /* SearchRepositoriesStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepositoriesStorage.swift; sourceTree = "<group>"; };
 		10DFC17526DE58A000FA5D9B /* ReachabilityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityManager.swift; sourceTree = "<group>"; };
@@ -374,6 +377,7 @@
 			isa = PBXGroup;
 			children = (
 				1004F31E26DE40320006CF78 /* LaunchScreen.storyboard */,
+				10DC6C3626E2389D0042A122 /* LaunchScreenMock.storyboard */,
 				10DFC1A026DE674500FA5D9B /* Repositories.storyboard */,
 			);
 			path = Storyboards;
@@ -770,6 +774,7 @@
 				10DFC1CD26DE8D0200FA5D9B /* SFUIText-Light.ttf in Resources */,
 				10DFC1CA26DE8D0200FA5D9B /* SFUIText-Heavy.ttf in Resources */,
 				10DFC1B226DE828A00FA5D9B /* RepositoryCell.xib in Resources */,
+				10DC6C3726E2389D0042A122 /* LaunchScreenMock.storyboard in Resources */,
 				10DFC1C126DE8B1300FA5D9B /* TableEmptyStateCell.xib in Resources */,
 				10DFC1A726DE682600FA5D9B /* SearchTextField.xib in Resources */,
 				1025C3A526DEFCAC00FF98BA /* ReposSearchResponse.json in Resources */,
@@ -804,6 +809,7 @@
 				10D8811B26E05AAC00F091E1 /* SFUIText-Light.ttf in Resources */,
 				10D8811C26E05AAC00F091E1 /* SFUIText-Heavy.ttf in Resources */,
 				10D8811D26E05AAC00F091E1 /* RepositoryCell.xib in Resources */,
+				10DC6C3826E2389D0042A122 /* LaunchScreenMock.storyboard in Resources */,
 				10D8811E26E05AAC00F091E1 /* TableEmptyStateCell.xib in Resources */,
 				10D8811F26E05AAC00F091E1 /* SearchTextField.xib in Resources */,
 				10D8812026E05AAC00F091E1 /* ReposSearchResponse.json in Resources */,
@@ -1130,7 +1136,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1185,7 +1191,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -1209,7 +1215,7 @@
 					"@executable_path/Frameworks",
 				);
 				OTHER_SWIFT_FLAGS = "-DREMOTE";
-				PRODUCT_BUNDLE_IDENTIFIER = ewaily.RippleRepositories;
+				PRODUCT_BUNDLE_IDENTIFIER = ewaily.RippleRepositoriesRemote;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1230,7 +1236,7 @@
 					"@executable_path/Frameworks",
 				);
 				OTHER_SWIFT_FLAGS = "-DREMOTE";
-				PRODUCT_BUNDLE_IDENTIFIER = ewaily.RippleRepositories;
+				PRODUCT_BUNDLE_IDENTIFIER = ewaily.RippleRepositoriesRemote;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1329,7 +1335,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8AF9CB9FF203BE8D27FDCD78 /* Pods-RippleRepositories.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconMock;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6675BR2529;
@@ -1339,7 +1345,7 @@
 					"@executable_path/Frameworks",
 				);
 				OTHER_SWIFT_FLAGS = "-DMOCK";
-				PRODUCT_BUNDLE_IDENTIFIER = ewaily.RippleRepositories;
+				PRODUCT_BUNDLE_IDENTIFIER = ewaily.RippleRepositoriesMock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1350,7 +1356,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 28C777DED6FE4D1A7C71A8C3 /* Pods-RippleRepositories.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconMock;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6675BR2529;
@@ -1360,7 +1366,7 @@
 					"@executable_path/Frameworks",
 				);
 				OTHER_SWIFT_FLAGS = "-DMOCK";
-				PRODUCT_BUNDLE_IDENTIFIER = ewaily.RippleRepositories;
+				PRODUCT_BUNDLE_IDENTIFIER = ewaily.RippleRepositoriesMock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
