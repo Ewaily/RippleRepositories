@@ -23,15 +23,20 @@ protocol ListRepositoriesViewModelInput {
     func didRepoAtIndexPath(_ indexPath: IndexPath)
 }
 
-class ListRepositoriesViewModel: ListRepositoriesViewModelOutput, ListRepositoriesViewModelInput {
+protocol ListRepositoriesViewModelProtocol: ListRepositoriesViewModelOutput, ListRepositoriesViewModelInput  {
+    
+}
+
+class ListRepositoriesViewModel: ListRepositoriesViewModelProtocol {
     
     let query: String
-    private let useCase = ListRepositoriesUseCase()
+    private let useCase: ListRepositoriesUseCaseProtocol
     var repositories: BehaviorRelay<[Repository]> = .init(value: [])
     var navigateToItemDetails: PublishSubject<Repository> = .init()
     
-    init(query: String) {
+    init(query: String, useCase: ListRepositoriesUseCaseProtocol) {
         self.query = query
+        self.useCase = useCase
     }
     
     func getRepositoryInfo(at index: Int) -> Repository {

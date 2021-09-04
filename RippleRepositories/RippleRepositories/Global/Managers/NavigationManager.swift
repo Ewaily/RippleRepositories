@@ -18,7 +18,9 @@ struct NavigationManager {
     
     func pushRepositoriesList(query: String) {
         let rpositoriesListView = ListRepositoriesViewController.instantiate(storyboard: .REPOSITORIES)
-        let viewModel = ListRepositoriesViewModel(query: query)
+        let repository = ListRepositoriesRepository(remote: RepositoriesAPI())
+        let useCase = ListRepositoriesUseCase(repository: repository)
+        let viewModel = ListRepositoriesViewModel(query: query, useCase: useCase)
         rpositoriesListView.initialize(with: viewModel)
         navigationController.pushViewController(rpositoriesListView, animated: true)
     }

@@ -7,9 +7,19 @@
 
 import Foundation
 
-struct ListRepositoriesUseCase {
+protocol ListRepositoriesUseCaseProtocol {
+    func fetchRepositories(query: String, completion: @escaping (Result<[Repository], String>) -> Void)
+    func cacheRepositories(repositories: [Repository], completion: @escaping () -> Void)
+    func fetchCachedRepositories(completion: @escaping (Result<[Repository], String>) -> Void)
+}
+
+struct ListRepositoriesUseCase: ListRepositoriesUseCaseProtocol {
+        
+    private let repository: ListRepositoriesRepositoryProtocol
     
-    private let repository = ListRepositoriesRepository(remote: RepositoriesAPI())
+    init(repository: ListRepositoriesRepositoryProtocol) {
+        self.repository = repository
+    }
     
     func fetchRepositories(query: String, completion: @escaping (Result<[Repository], String>) -> Void) {
         repository.fetchRepositories(query: query, completion: completion)

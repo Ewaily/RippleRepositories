@@ -1,29 +1,24 @@
 //
-//  ListRepositoriesRepository.swift
-//  RippleRepositories
+//  ListRepositoriesRepositoryMock.swift
+//  RippleRepositoriesTests
 //
-//  Created by Muhammad Ewaily on 31/08/2021.
+//  Created by Muhammad Ewaily on 04/09/2021.
 //
 
 import Foundation
+@testable import RippleRepositories
 
-protocol ListRepositoriesRepositoryProtocol {
-    func fetchRepositories(query: String, completion: @escaping (Result<[Repository], String>) -> Void)
-    func cacheRepositories(repositories: [Repository], completion: @escaping () -> Void)
-    func fetchCachedRepositories(completion: @escaping (Result<[Repository], String>) -> Void)
-}
-
-struct ListRepositoriesRepository: ListRepositoriesRepositoryProtocol {
+struct ListRepositoriesRepositoryMock: ListRepositoriesRepositoryProtocol {
     
-    let remoteSource: RepositoriesAPIProtocol
+    let mockSource: RepositoriesAPIProtocol
     private let cacheSource: SearchRepositoriesStorage = SearchRepositoriesStorage()
     
-    init(remote: RepositoriesAPIProtocol) {
-        self.remoteSource = remote
+    init(mock: RepositoriesAPIProtocol) {
+        self.mockSource = mock
     }
     
     func fetchRepositories(query: String, completion: @escaping (Result<[Repository], String>) -> Void) {
-        remoteSource.search(query: query) { result in
+        mockSource.search(query: query) { result in
             switch result {
             case .success(let repositoriesSearchDTO):
                 let repositories = repositoriesSearchDTO.repositories.compactMap( { $0.toDomain()} )
@@ -47,4 +42,5 @@ struct ListRepositoriesRepository: ListRepositoriesRepositoryProtocol {
             completion(.failure("Error"))
         }
     }
+    
 }

@@ -26,7 +26,7 @@ class ListRepositoriesRemoteRepositoryTests: XCTestCase {
 
     func testFetchListWithSuccess() {
         // GIVEN
-        let expectation = expectation(description: "Repos List fetched")
+        let expectation = expectation(description: "Repositories list cached")
         let expected = SearchResponseDTO(json: JSON(DataMocks.searchResponse!)).repositories.compactMap({$0.toDomain()})
         var searchResponse: [Repository]?
         // WHEN
