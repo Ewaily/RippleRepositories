@@ -30,7 +30,7 @@ RippleRepositories is an iOS mobile app that display list of Github repositories
 
 
 # Installation
-
+Check out to production branch
 #### CocoaPods
 [CocoaPods](https://cocoapods.org) is a dependency manager for Cocoa projects. For usage and installation instructions, visit their website. 
 or simply do this 👇
